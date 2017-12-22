@@ -1,1 +1,1 @@
-FROM gcr.io/kubeflow/jupyterhub:1.0
+FROM gcr.io/kubeflow/tensorflow-notebook-gpu
