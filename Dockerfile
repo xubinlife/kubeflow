@@ -1,1 +1,1 @@
-FROM gcr.io/kubeflow/tensorflow-notebook-gpu
+FROM gcr.io/kubeflow/tensorflow-notebook-cpu
