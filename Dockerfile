@@ -22,12 +22,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         wget \
         && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    rm -f /usr/bin/python && \
+    ln -s /usr/bin/python3 /usr/bin/python
 
 USER root
-
-RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
-    locale-gen
 
 # Configure environment
 ENV SHELL=/bin/bash \
