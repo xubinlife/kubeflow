@@ -1,1 +1,1 @@
-FROM gcr.io/google_containers/spartakus-amd64:v1.0.0
+FROM gcr.io/kubeflow-images-staging/tf_operator:v20180329-a7511ff
