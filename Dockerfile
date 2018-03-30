@@ -1,1 +1,1 @@
-FROM gcr.io/kubeflow/jupyterhub-k8s:1.0.1
+FROM gcr.io/google_containers/spartakus-amd64:v1.0.0
