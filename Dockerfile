@@ -1,1 +1,1 @@
-FROM gcr.io/google_containers/spartakus-amd64:v1.0.0
+FROM quay.io/datawire/ambassador:0.30.1
