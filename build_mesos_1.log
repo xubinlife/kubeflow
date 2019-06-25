@@ -1,0 +1,2784 @@
+cd . && /bin/bash ./config.status src/java/mesos.pom
+config.status: creating src/java/mesos.pom
+Making all in .
+make[1]: Entering directory '/root/mesos-1.6.1/build'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/root/mesos-1.6.1/build'
+Making all in 3rdparty
+make[1]: Entering directory '/root/mesos-1.6.1/build/3rdparty'
+gzip -d -c ../../3rdparty/http-parser-2.6.2.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/googletest-release-1.8.0.tar.gz | tar xf -
+test ! -e ../../3rdparty/http-parser-2.6.2.patch || patch -d http-parser-2.6.2 -p1 <../../3rdparty/http-parser-2.6.2.patch
+touch http-parser-2.6.2-stamp
+test ! -e ../../3rdparty/googletest-release-1.8.0.patch || patch -d googletest-release-1.8.0 -p1 <../../3rdparty/googletest-release-1.8.0.patch
+touch googletest-release-1.8.0-stamp
+cd .. && /bin/bash ./config.status 3rdparty/gmock_sources.cc
+config.status: creating 3rdparty/gmock_sources.cc
+make  all-recursive
+make[2]: Entering directory '/root/mesos-1.6.1/build/3rdparty'
+Making all in .
+make[3]: Entering directory '/root/mesos-1.6.1/build/3rdparty'
+gzip -d -c ../../3rdparty/elfio-3.2.tar.gz | tar xf -
+  CC       libry_http_parser_la-http_parser.lo
+gzip -d -c ../../3rdparty/picojson-1.3.0.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/pip-7.1.2.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/setuptools-20.9.0.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/wheel-0.24.0.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/boost-1.65.0.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/concurrentqueue-7b69a8f.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/glog-0.3.3.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/libev-4.22.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/nvml-352.79.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/protobuf-3.5.0.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/csi-0.2.0.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/leveldb-1.19.tar.gz | tar xf -
+gzip -d -c ../../3rdparty/zookeeper-3.4.8.tar.gz | tar xf -
+test ! -e ../../3rdparty/picojson-1.3.0.patch || patch -d picojson-1.3.0 -p1 <../../3rdparty/picojson-1.3.0.patch
+  CXX      libgmock_la-gmock_sources.lo
+touch picojson-1.3.0-stamp
+test ! -e ../../3rdparty/nvml-352.79.patch || patch -d nvml-352.79 -p1 <../../3rdparty/nvml-352.79.patch
+test ! -e ../../3rdparty/wheel-0.24.0.patch || patch -d wheel-0.24.0 -p1 <../../3rdparty/wheel-0.24.0.patch
+test ! -e ../../3rdparty/csi-0.2.0.patch || patch -d csi-0.2.0 -p1 <../../3rdparty/csi-0.2.0.patch
+touch nvml-352.79-stamp
+touch wheel-0.24.0-stamp
+touch csi-0.2.0-stamp
+test ! -e ../../3rdparty/leveldb-1.19.patch || patch -d leveldb-1.19 -p1 <../../3rdparty/leveldb-1.19.patch
+patching file Makefile
+patching file build_detect_platform
+touch leveldb-1.19-stamp
+cd leveldb-1.19 && \
+  make  CC="gcc" CXX="g++" OPT="-g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC"
+make[4]: Entering directory '/root/mesos-1.6.1/build/3rdparty/leveldb-1.19'
+test ! -e ../../3rdparty/setuptools-20.9.0.patch || patch -d setuptools-20.9.0 -p1 <../../3rdparty/setuptools-20.9.0.patch
+touch setuptools-20.9.0-stamp
+test ! -e ../../3rdparty/libev-4.22.patch || patch -d libev-4.22 -p1 <../../3rdparty/libev-4.22.patch
+patching file ev.h
+touch libev-4.22-stamp
+cd libev-4.22 && ./configure '--with-network-isolator' '--with-nl=/usr/local' '--disable-java' CXXFLAGS='-g1 -O0 -Wno-unused-local-typedefs -std=c++11' --enable-shared=no --with-pic --srcdir=. --prefix=/ && \
+           make 
+test ! -e ../../3rdparty/glog-0.3.3.patch || patch -d glog-0.3.3 -p1 <../../3rdparty/glog-0.3.3.patch
+patching file config.guess
+patching file configure.ac
+test ! -e ../../3rdparty/pip-7.1.2.patch || patch -d pip-7.1.2 -p1 <../../3rdparty/pip-7.1.2.patch
+patching file src/demangle.cc
+patching file src/glog/stl_logging.h.in
+patching file src/stacktrace_powerpc-inl.h
+patching file src/stl_logging_unittest.cc
+patching file src/symbolize.cc
+touch pip-7.1.2-stamp
+touch glog-0.3.3-stamp
+cd glog-0.3.3 && ./configure GTEST_CONFIG=no '--with-network-isolator' '--with-nl=/usr/local' '--disable-java' CXXFLAGS='-g1 -O0 -Wno-unused-local-typedefs -std=c++11' --enable-shared=no --with-pic --srcdir=. --prefix=/ && \
+          make   libglog.la
+test ! -e ../../3rdparty/elfio-3.2.patch || patch -d elfio-3.2 -p1 <../../3rdparty/elfio-3.2.patch
+touch elfio-3.2-stamp
+test ! -e ../../3rdparty/boost-1.65.0.patch || patch -d boost-1.65.0 -p1 <../../3rdparty/boost-1.65.0.patch
+touch boost-1.65.0-stamp
+mkdir out-static
+mkdir out-static/db
+mkdir out-static/port
+mkdir out-static/table
+mkdir out-static/util
+mkdir -p out-static/helpers/memenv
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/builder.cc -o out-static/db/builder.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/c.cc -o out-static/db/c.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/dbformat.cc -o out-static/db/dbformat.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/db_impl.cc -o out-static/db/db_impl.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/db_iter.cc -o out-static/db/db_iter.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/dumpfile.cc -o out-static/db/dumpfile.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/filename.cc -o out-static/db/filename.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/log_reader.cc -o out-static/db/log_reader.o
+test ! -e ../../3rdparty/concurrentqueue-7b69a8f.patch || patch -d concurrentqueue-7b69a8f -p1 <../../3rdparty/concurrentqueue-7b69a8f.patch
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/log_writer.cc -o out-static/db/log_writer.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/memtable.cc -o out-static/db/memtable.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/repair.cc -o out-static/db/repair.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/table_cache.cc -o out-static/db/table_cache.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/version_edit.cc -o out-static/db/version_edit.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/version_set.cc -o out-static/db/version_set.o
+touch concurrentqueue-7b69a8f-stamp
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c db/write_batch.cc -o out-static/db/write_batch.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c table/block_builder.cc -o out-static/table/block_builder.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c table/block.cc -o out-static/table/block.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c table/filter_block.cc -o out-static/table/filter_block.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c table/format.cc -o out-static/table/format.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c table/iterator.cc -o out-static/table/iterator.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c table/merger.cc -o out-static/table/merger.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c table/table_builder.cc -o out-static/table/table_builder.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c table/table.cc -o out-static/table/table.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c table/two_level_iterator.cc -o out-static/table/two_level_iterator.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/arena.cc -o out-static/util/arena.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/bloom.cc -o out-static/util/bloom.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/cache.cc -o out-static/util/cache.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/coding.cc -o out-static/util/coding.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/comparator.cc -o out-static/util/comparator.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/crc32c.cc -o out-static/util/crc32c.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/env.cc -o out-static/util/env.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/env_posix.cc -o out-static/util/env_posix.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/filter_policy.cc -o out-static/util/filter_policy.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/hash.cc -o out-static/util/hash.o
+configure: WARNING: unrecognized options: --with-network-isolator, --with-nl, --disable-java
+configure: WARNING: unrecognized options: --with-network-isolator, --with-nl, --disable-java
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/histogram.cc -o out-static/util/histogram.o
+  CCLD     libry_http_parser.la
+checking for a BSD-compatible install... g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/logging.cc -o out-static/util/logging.o
+checking for a BSD-compatible install... g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/options.cc -o out-static/util/options.o
+g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c util/status.cc -o out-static/util/status.o
+/usr/bin/install -c
+checking whether build environment is sane... yes
+/usr/bin/install -c
+checking whether build environment is sane... g++ -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_ATOMIC_PRESENT -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -fPIC -c port/port_posix.cc -o out-static/port/port_posix.o
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... gcc
+checking whether the C compiler works... test ! -e ../../3rdparty/zookeeper-3.4.8.patch || patch -d zookeeper-3.4.8 -p1 <../../3rdparty/zookeeper-3.4.8.patch
+patching file src/c/CMakeLists.txt
+patching file src/c/Cli.vcproj
+patching file src/c/README
+patching file src/c/cmake_config.h.in
+patching file src/c/include/recordio.h
+patching file src/c/include/winconfig.h
+patching file src/c/include/winstdint.h
+patching file src/c/include/zookeeper.h
+patching file src/c/src/load_gen.c
+patching file src/c/src/mt_adaptor.c
+patching file src/c/src/recordio.c
+patching file src/c/src/winport.c
+patching file src/c/src/winport.h
+patching file src/c/src/zk_log.c
+patching file src/c/src/zookeeper.c
+patching file src/c/zookeeper.vcproj
+touch zookeeper-3.4.8-stamp
+cd zookeeper-3.4.8/src/c && ./configure '--with-network-isolator' '--with-nl=/usr/local' '--disable-java' CXXFLAGS='-g1 -O0 -Wno-unused-local-typedefs -std=c++11' --enable-shared=no --with-pic --srcdir=. --prefix=/ && \
+  make 
+test ! -e ../../3rdparty/protobuf-3.5.0.patch || patch -d protobuf-3.5.0 -p1 <../../3rdparty/protobuf-3.5.0.patch
+touch protobuf-3.5.0-stamp
+cd protobuf-3.5.0 &&				\
+  ./configure '--with-network-isolator' '--with-nl=/usr/local' '--disable-java' CXXFLAGS='-g1 -O0 -Wno-unused-local-typedefs -std=c++11' --enable-shared=no --with-pic --srcdir=. --prefix=/			\
+              CPPFLAGS=""	\
+              LDFLAGS="" &&	\
+  make 
+ar: `u' modifier ignored since `D' is the default (see `U')
+yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... configure: WARNING: unrecognized options: --with-network-isolator, --with-nl, --disable-java
+no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... checking for doxygen... no
+checking for perl... /usr/bin/perl
+checking for dot... no
+checking for a BSD-compatible install... checking whether to enable maintainer-specific portions of Makefiles... yes
+/usr/bin/install -c
+checking whether build environment is sane... yes
+yes
+checking whether gcc accepts -g... checking build system type... checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+yes
+checking for gcc option to accept ISO C89... checking for cppunit-config... no
+checking for Cppunit - version >= 1.10.2... no
+checking for generated/zookeeper.jute.c... yes
+checking for generated/zookeeper.jute.h... yes
+checking for gcc... gcc
+checking whether the C compiler works... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... none needed
+checking whether gcc understands -c and -o together... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+yes
+checking for C compiler default output file name... a.out
+checking whether make supports nested variables... checking for suffix of executables... yes
+checking whether UID '0' is supported by ustar format... yes
+checking whether GID '0' is supported by ustar format... yes
+checking how to create a ustar tar archive... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gnutar
+checking for gcc... gcc
+
+checking whether we are cross compiling... checking whether the C compiler works... gcc3
+no
+checking build system type... checking for suffix of object files... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... o
+checking whether we are using the GNU C compiler... 
+yes
+checking whether gcc accepts -g... checking whether we are cross compiling... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... yes
+checking for gcc option to accept ISO C89... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... no
+/bin/grep
+checking for egrep... checking for suffix of object files... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... none needed
+checking whether gcc understands -c and -o together... o
+checking whether we are using the GNU C compiler... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... yes
+checking whether gcc accepts -g... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... yes
+checking for gcc option to accept ISO C89... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... none needed
+checking whether gcc understands -c and -o together... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... yes
+checking whether g++ accepts -g... ok
+checking for sysroot... no
+yes
+checking dependency style of g++... checking for mt... mt
+checking if mt is a manifest tool... no
+gcc3
+checking how to run the C preprocessor... checking for g++... g++
+checking whether we are using the GNU C++ compiler... gcc -E
+gcc3
+checking whether ln -s works... yes
+checking build system type... checking for ANSI C header files... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... gcc3
+checking how to run the C preprocessor... printf
+checking for a sed that does not truncate output... /bin/sed
+gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... checking for gcc... gcc
+yes
+checking for sys/types.h... BSD nm
+checking the maximum length of command line arguments... checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... yes
+yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking how to run the C preprocessor... checking for sys/stat.h... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... gcc -E
+yes
+checking for stdlib.h... checking how to run the C++ preprocessor... g++ -E
+yes
+checking for string.h... checking for g++... g++
+ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... /bin/dd bs=4096 count=1
+yes
+checking for memory.h... checking for mt... mt
+checking if mt is a manifest tool... yes
+checking dependency style of g++... (cached) gcc3
+checking how to run the C++ preprocessor... no
+checking how to run the C preprocessor... g++ -E
+yes
+gcc -E
+checking for strings.h... checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... checking for ANSI C header files... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+yes
+checking for sys/types.h... checking for sys/types.h... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+yes
+yes
+yes
+checking for dlfcn.h... checking for sys/stat.h... checking for sys/stat.h... checking for gcc... gcc
+checking whether the C compiler works... yes
+yes
+checking for stdlib.h... checking for stdlib.h... yes
+checking for objdir... .libs
+yes
+yes
+yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... checking for string.h... checking for string.h... yes
+
+yes
+checking whether we are cross compiling... checking for memory.h... checking for memory.h... checking if gcc supports -fno-rtti -fno-exceptions... rm -f out-static/libleveldb.a
+ar -rs out-static/libleveldb.a out-static/db/builder.o out-static/db/c.o out-static/db/dbformat.o out-static/db/db_impl.o out-static/db/db_iter.o out-static/db/dumpfile.o out-static/db/filename.o out-static/db/log_reader.o out-static/db/log_writer.o out-static/db/memtable.o out-static/db/repair.o out-static/db/table_cache.o out-static/db/version_edit.o out-static/db/version_set.o out-static/db/write_batch.o out-static/table/block_builder.o out-static/table/block.o out-static/table/filter_block.o out-static/table/format.o out-static/table/iterator.o out-static/table/merger.o out-static/table/table_builder.o out-static/table/table.o out-static/table/two_level_iterator.o out-static/util/arena.o out-static/util/bloom.o out-static/util/cache.o out-static/util/coding.o out-static/util/comparator.o out-static/util/crc32c.o out-static/util/env.o out-static/util/env_posix.o out-static/util/filter_policy.o out-static/util/hash.o out-static/util/histogram.o out-static/util/logging.o out-static/util/options.o out-static/util/status.o out-static/port/port_posix.o
+ar: creating out-static/libleveldb.a
+yes
+no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... checking for strings.h... yes
+no
+checking for suffix of object files... checking for strings.h... make[4]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/leveldb-1.19'
+yes
+checking if gcc static flag -static works... o
+checking whether we are using the GNU C compiler... yes
+checking for inttypes.h... yes
+checking for inttypes.h... yes
+checking whether gcc accepts -g... yes
+yes
+checking for gcc option to accept ISO C89... checking for stdint.h... yes
+checking for stdint.h... yes
+checking if gcc supports -c -o file.o... yes
+checking for unistd.h... none needed
+checking for style of include used by make... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... GNU
+checking dependency style of gcc... yes
+yes
+checking dynamic linker characteristics... checking for unistd.h... yes
+checking minix/config.h usability... gcc3
+checking how to run the C preprocessor... yes
+checking for dlfcn.h... no
+checking minix/config.h presence... gcc -E
+GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... checking sys/inotify.h usability... checking for g++... g++
+yes
+checking for objdir... .libs
+checking whether we are using the GNU C++ compiler... yes
+checking sys/inotify.h presence... yes
+checking for ar... ar
+checking the archiver (ar) interface... yes
+checking for sys/inotify.h... yes
+checking sys/epoll.h usability... yes
+checking whether g++ accepts -g... ar
+checking for gcc... gcc
+checking whether we are using the GNU Objective C compiler... yes
+checking dependency style of g++... no
+checking whether gcc accepts -g... yes
+checking sys/epoll.h presence... checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for sys/epoll.h... yes
+checking sys/event.h usability... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... no
+checking dependency style of gcc... gcc3
+checking build system type... yes
+checking if gcc static flag -static works... no
+checking sys/event.h presence... gcc3
+checking C++ compiler flags...... use user-supplied: -g1 -O0 -Wno-unused-local-typedefs -std=c++11
+no
+checking for sys/event.h... no
+checking whether __SUNPRO_CC is declared... checking port.h usability... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... no
+checking how to print strings... no
+checking port.h presence... no
+checking for port.h... no
+checking poll.h usability... printf
+checking for a sed that does not truncate output... yes
+checking if gcc supports -c -o file.o... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... printf
+/bin/grep -E
+checking for a sed that does not truncate output... checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /bin/sed
+checking for fgrep... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... /bin/grep -F
+checking for ld used by gcc... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking poll.h presence... yes
+checking dynamic linker characteristics... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... yes
+checking for poll.h... yes
+1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking sys/select.h usability... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+@
+checking for strip... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... strip
+checking for ranlib... ranlib
+yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking command to parse /usr/bin/nm -B output from gcc object... checking sys/eventfd.h usability... checking how to run the C++ preprocessor... g++ -E
+yes
+checking sys/eventfd.h presence... yes
+checking for sys/eventfd.h... yes
+checking sys/signalfd.h usability... ok
+checking for sysroot... no
+ok
+checking for sysroot... no
+checking for a working dd... checking for mt... mt
+checking if mt is a manifest tool... /bin/dd
+checking how to truncate binary pipes... yes
+checking sys/signalfd.h presence... no
+/bin/dd bs=4096 count=1
+yes
+checking for sys/signalfd.h... yes
+checking for ANSI C header files... checking for inotify_init... checking for mt... mt
+checking if mt is a manifest tool... no
+checking for ld used by g++... checking for dlfcn.h... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+no
+checking for sys/types.h... yes
+checking for epoll_ctl... yes
+checking for objdir... yes
+.libs
+checking for sys/stat.h... yes
+yes
+checking for stdlib.h... checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... checking for kqueue... yes
+checking if g++ static flag -static works... yes
+checking for string.h... checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for port_create... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking for memory.h... yes
+checking if gcc static flag -static works... no
+yes
+checking if g++ supports -c -o file.o... checking for poll... yes
+checking for strings.h... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for pthread_mutex_lock in -lpthread... yes
+yes
+checking for select... checking for inttypes.h... yes
+checking if gcc supports -c -o file.o... yes
+configure: building with SyncAPI support
+checking for ANSI C header files... (cached) yes
+yes
+yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... checking arpa/inet.h usability... checking for stdint.h... yes
+checking dynamic linker characteristics... yes
+checking for eventfd... yes
+yes
+checking arpa/inet.h presence... checking for unistd.h... yes
+yes
+checking for arpa/inet.h... yes
+checking for signalfd... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking fcntl.h usability... checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+yes
+checking for dlfcn.h... yes
+yes
+checking fcntl.h presence... checking for clock_gettime... yes
+checking for fcntl.h... yes
+yes
+checking for objdir... checking netdb.h usability... .libs
+yes
+checking for nanosleep... yes
+checking netdb.h presence... checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+yes
+checking for netdb.h... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking netinet/in.h usability... yes
+checking for library containing floor... checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking netinet/in.h presence... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking for netinet/in.h... yes
+checking for stdlib.h... (cached) yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... checking for string.h... (cached) yes
+yes
+checking if gcc static flag -static works... checking sys/socket.h usability... yes
+checking if g++ static flag -static works... -lm
+yes
+checking sys/socket.h presence... checking that generated files are newer than configure... done
+configure: creating ./config.status
+yes
+checking for sys/socket.h... yes
+checking sys/time.h usability... yes
+checking if gcc supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... yes
+checking sys/time.h presence... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... yes
+checking for sys/time.h... yes
+yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) checking for unistd.h... (cached) yes
+GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether the linker supports version scripts... checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+yes
+yes
+checking for sys/utsname.h... yes
+checking for ANSI C header files... (cached) yes
+checking how to run the C++ preprocessor... checking fcntl.h usability... checking for an ANSI C-conforming const... g++ -E
+yes
+checking for inline... yes
+checking fcntl.h presence... inline
+checking whether time.h and sys/time.h may both be included... yes
+checking for fcntl.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking for nfds_t... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for stdlib.h... (cached) yes
+yes
+checking whether to enable ipv6... checking for unistd.h... (cached) yes
+checking for ld used by g++... checking for working memcmp... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+yes
+checking for getcwd... yes
+checking for working strtod... checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking for gethostbyname... yes
+checking if g++ static flag -static works... yes
+yes
+checking for ftruncate... checking for gethostname... config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+yes
+checking if g++ supports -c -o file.o... config.status: executing libtool commands
+yes
+checking for getlogin... yes
+yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) checking for memset... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for ANSI C header files... (cached) no
+checking for stdint.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking syscall.h usability... yes
+checking for getpwuid_r... yes
+checking syscall.h presence... yes
+checking for syscall.h... yes
+yes
+checking sys/syscall.h usability... checking for mkdir... yes
+configure: WARNING: unrecognized options: --with-network-isolator, --with-nl, --disable-java
+yes
+checking sys/syscall.h presence... checking for gettimeofday... yes
+checking for sys/syscall.h... yes
+checking execinfo.h usability... yes
+make[4]: Entering directory '/root/mesos-1.6.1/build/3rdparty/libev-4.22'
+make  all-am
+checking for strchr... make[5]: Entering directory '/root/mesos-1.6.1/build/3rdparty/libev-4.22'
+  CC       ev.lo
+  CC       event.lo
+yes
+checking execinfo.h presence... yes
+checking for getuid... yes
+checking for execinfo.h... yes
+checking libunwind.h usability... no
+checking libunwind.h presence... yes
+checking for strerror... no
+checking for libunwind.h... no
+checking ucontext.h usability... yes
+ev.c:1825:31: warning: 'ev_default_loop_ptr' initialized and declared 'extern'
+   EV_API_DECL struct ev_loop *ev_default_loop_ptr = 0; /* needs to be initialised to make it a definition despite extern */
+                               ^
+checking for memmove... ev.c: In function 'evpipe_write':
+ev.c:2454:11: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+           write (evpipe [1], &counter, sizeof (uint64_t));
+           ^
+ev.c:2466:11: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+           write (evpipe [1], &(evpipe [1]), 1);
+           ^
+ev.c: In function 'pipecb':
+ev.c:2487:11: warning: ignoring return value of 'read', declared with attribute warn_unused_result [-Wunused-result]
+           read (evpipe [1], &counter, sizeof (uint64_t));
+           ^
+ev.c:2501:11: warning: ignoring return value of 'read', declared with attribute warn_unused_result [-Wunused-result]
+           read (evpipe [0], &dummy, sizeof (dummy));
+           ^
+yes
+checking ucontext.h presence... yes
+checking for ucontext.h... yes
+checking sys/utsname.h usability... yes
+checking for strtol... yes
+checking for memset... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking pwd.h usability... yes
+checking zlib version... yes
+checking pwd.h presence... ok (1.2.0.4 or later)
+checking for library containing zlibVersion... yes
+checking for pwd.h... yes
+checking syslog.h usability... yes
+checking for poll... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking sys/time.h usability... yes
+checking for socket... yes
+checking sys/time.h presence... -lz
+checking for the pthreads library -lpthreads... yes
+checking for sys/time.h... yes
+checking glob.h usability... yes
+yes
+checking glob.h presence... checking for strchr... no
+checking whether pthreads work without any flags... yes
+checking for glob.h... yes
+checking unwind.h usability... yes
+checking unwind.h presence... yes
+yes
+checking for unwind.h... checking for strdup... yes
+checking size of void *... no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... yes
+checking for strerror... 8
+checking for uint16_t... no
+checking whether pthreads work with -pthread... yes
+checking for strtol... yes
+checking for joinable pthread attribute... yes
+yes
+checking for u_int16_t... checking that generated files are newer than configure... done
+configure: creating ./config.status
+PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking whether to check for GCC pthread/shared inconsistencies... yes
+checking for __uint16... yes
+checking whether -pthread is sufficient with -shared... no
+checking for sigaltstack... yes
+checking whether what we have so far is sufficient with -nostdlib... yes
+checking for dladdr... no
+checking whether -lpthread saves the day... yes
+checking the location of hash_map... no
+checking for fcntl... yes
+checking for __attribute__...   CXXLD    libgmock.la
+yes
+checking for __builtin_expect... yes
+checking for __sync_val_compare_and_swap... yes
+checking for the pthreads library -lpthreads... ar: `u' modifier ignored since `D' is the default (see `U')
+no
+checking whether pthreads work without any flags... touch googletest-release-1.8.0/googlemock-build-stamp
+<unordered_map>
+checking for library containing sched_yield...   CCLD     libev.la
+no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... none required
+checking whether g++ supports C++11 features by default... ar: `u' modifier ignored since `D' is the default (see `U')
+no
+checking whether pthreads work with -pthread... make[5]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/libev-4.22'
+make[4]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/libev-4.22'
+touch libev-4.22-build-stamp
+yes
+config.status: creating Makefile
+config.status: creating config.h
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: executing depfiles commands
+yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking whether to check for GCC pthread/shared inconsistencies... yes
+checking whether -pthread is sufficient with -shared... config.status: executing libtool commands
+configure: WARNING: unrecognized options: --with-network-isolator, --with-nl, --disable-java
+yes
+checking for pthread_self in -lpthread... make[4]: Entering directory '/root/mesos-1.6.1/build/3rdparty/zookeeper-3.4.8/src/c'
+make  all-am
+make[5]: Entering directory '/root/mesos-1.6.1/build/3rdparty/zookeeper-3.4.8/src/c'
+  CC       zookeeper.lo
+  CC       recordio.lo
+  CC       zookeeper.jute.lo
+  CC       zk_log.lo
+  CC       zk_hashtable.lo
+  CC       st_adaptor.lo
+  CC       hashtable_itr.lo
+  CC       hashtable.lo
+  CC       libzkmt_la-zookeeper.lo
+  CC       libzkmt_la-recordio.lo
+  CC       libzkmt_la-zookeeper.jute.lo
+  CC       libzkmt_la-zk_log.lo
+  CC       libzkmt_la-zk_hashtable.lo
+  CC       libzkmt_la-mt_adaptor.lo
+  CC       cli.o
+  CC       cli_mt-cli.o
+  CC       load_gen-load_gen.o
+yes
+checking for main in -lgflags... no
+checking for gtest-config... no
+checking support for pthread_rwlock_* functions... yes
+checking whether the compiler implements namespaces... yes
+checking what namespace STL code is in...   CCLD     libhashtable.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+std
+checking whether compiler supports using ::operator<<... config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating benchmarks/Makefile
+config.status: creating conformance/Makefile
+config.status: creating protobuf.pc
+1
+checking for ucontext.h... (cached) yes
+checking sys/ucontext.h usability... config.status: creating protobuf-lite.pc
+config.status: creating config.h
+yes
+config.status: executing depfiles commands
+checking sys/ucontext.h presence... yes
+checking for sys/ucontext.h... yes
+checking how to access the program counter from a struct ucontext... uc_mcontext.gregs[REG_RIP]
+configure: creating ./config.status
+  CCLD     libzkmt.la
+  CCLD     libzkst.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CCLD     libzookeeper_mt.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CCLD     libzookeeper_st.la
+config.status: creating Makefile
+config.status: creating src/glog/logging.h
+config.status: creating src/glog/raw_logging.h
+ar: `u' modifier ignored since `D' is the default (see `U')
+config.status: creating src/glog/vlog_is_on.h
+  CCLD     cli_mt
+  CCLD     load_gen
+config.status: creating src/glog/stl_logging.h
+ar: `u' modifier ignored since `D' is the default (see `U')
+config.status: creating libglog.pc
+config.status: creating src/config.h
+  CCLD     cli_st
+config.status: executing libtool commands
+config.status: executing depfiles commands
+=== configuring in gmock (/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/gmock)
+configure: running /bin/bash ./configure --disable-option-checking '--prefix=/'  '--with-network-isolator' '--with-nl=/usr/local' '--disable-java' 'CXXFLAGS=-g1 -O0 -Wno-unused-local-typedefs -std=c++11' '--enable-shared=no' '--with-pic' 'CPPFLAGS=' 'LDFLAGS=' --cache-file=/dev/null --srcdir=.
+config.status: executing libtool commands
+make[5]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/zookeeper-3.4.8/src/c'
+make[4]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/zookeeper-3.4.8/src/c'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+configure: WARNING: unrecognized options: --with-network-isolator, --with-nl, --disable-java
+checking for gcc... gcc
+checking whether the C compiler works... make[4]: Entering directory '/root/mesos-1.6.1/build/3rdparty/glog-0.3.3'
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /root/mesos-1.6.1/build/3rdparty/glog-0.3.3/missing --run aclocal-1.11 -I m4
+/root/mesos-1.6.1/build/3rdparty/glog-0.3.3/missing: line 54: aclocal-1.11: command not found
+WARNING: `aclocal-1.11' is missing on your system.  You should only need it if
+         you modified `acinclude.m4' or `configure.ac'.  You might want
+         to install the `Automake' and `Perl' packages.  Grab them from
+         any GNU archive site.
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /root/mesos-1.6.1/build/3rdparty/glog-0.3.3/missing --run autoconf
+ cd . && /bin/bash /root/mesos-1.6.1/build/3rdparty/glog-0.3.3/missing --run automake-1.11 --gnu
+/root/mesos-1.6.1/build/3rdparty/glog-0.3.3/missing: line 54: automake-1.11: command not found
+WARNING: `automake-1.11' is missing on your system.  You should only need it if
+         you modified `Makefile.am', `acinclude.m4' or `configure.ac'.
+         You might want to install the `Automake' and `Perl' packages.
+         Grab them from any GNU archive site.
+yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... aclocal.m4:17: warning: this file was generated for autoconf 2.68.
+You have another version of autoconf.  It may work, but is not guaranteed to.
+If you have problems, you may need to regenerate the build system entirely.
+To do so, use the procedure documented by the package, typically `autoreconf'.
+yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... /bin/bash ./config.status --recheck
+yes
+checking for sys/types.h... running CONFIG_SHELL=/bin/bash /bin/bash ./configure GTEST_CONFIG=no --with-network-isolator --with-nl=/usr/local --disable-java CXXFLAGS=-g1 -O0 -Wno-unused-local-typedefs -std=c++11 --enable-shared=no --with-pic --srcdir=. --prefix=/ --no-create --no-recursion
+yes
+checking for sys/stat.h... yes
+checking for stdlib.h... configure: WARNING: unrecognized options: --with-network-isolator, --with-nl, --disable-java
+yes
+checking for string.h... checking for a BSD-compatible install... yes
+/usr/bin/install -c
+checking whether build environment is sane... checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for python... /usr/bin/python
+checking for the pthreads library -lpthreads... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+no
+checking whether pthreads work without any flags... checking for gcc... gcc
+checking whether the C compiler works... no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking whether pthreads work with -pthread... no
+checking for suffix of object files... yes
+checking for joinable pthread attribute... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking whether to check for GCC pthread/shared inconsistencies... yes
+checking for gcc option to accept ISO C89... yes
+checking whether -pthread is sufficient with -shared... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... yes
+checking for gtest-config... no
+gcc3
+checking how to run the C preprocessor... checking that generated files are newer than configure... done
+configure: creating ./config.status
+gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for ANSI C header files... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... config.status: creating Makefile
+yes
+checking for memory.h... config.status: creating scripts/gmock-config
+yes
+config.status: creating build-aux/config.h
+checking for strings.h... config.status: executing depfiles commands
+yes
+checking for inttypes.h... config.status: executing libtool commands
+=== configuring in gtest (/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/gmock/gtest)
+yes
+configure: running /bin/bash ./configure --disable-option-checking '--prefix=/'  '--with-network-isolator' '--with-nl=/usr/local' '--disable-java' 'CXXFLAGS=-g1 -O0 -Wno-unused-local-typedefs -std=c++11' '--enable-shared=no' '--with-pic' 'CPPFLAGS=' 'LDFLAGS=' 'CFLAGS=' --cache-file=/dev/null --srcdir=.
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking if gcc supports -fno-rtti -fno-exceptions... checking whether the C compiler works... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... yes
+checking if gcc static flag -static works... 
+checking whether we are cross compiling... yes
+checking if gcc supports -c -o file.o... no
+checking for suffix of object files... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... o
+checking whether we are using the GNU C compiler... yes
+checking dynamic linker characteristics... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+none needed
+checking whether gcc understands -c and -o together... checking how to run the C++ preprocessor... g++ -E
+yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dependency style of g++... yes
+gcc3
+checking build system type... checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... yes
+checking if g++ supports -c -o file.o... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for ANSI C header files... (cached) no
+checking for stdint.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking syscall.h usability... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... yes
+checking syscall.h presence... yes
+checking for syscall.h... yes
+checking sys/syscall.h usability... yes
+checking sys/syscall.h presence... yes
+checking for sys/syscall.h... yes
+checking execinfo.h usability... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+yes
+checking execinfo.h presence... checking for mt... mt
+checking if mt is a manifest tool... no
+yes
+checking for execinfo.h... yes
+checking how to run the C preprocessor... checking libunwind.h usability... gcc -E
+no
+checking libunwind.h presence... no
+checking for libunwind.h... no
+checking ucontext.h usability... checking for ANSI C header files... yes
+checking ucontext.h presence... yes
+checking for ucontext.h... yes
+checking sys/utsname.h usability... yes
+yes
+checking sys/utsname.h presence... checking for sys/types.h... yes
+checking for sys/utsname.h... yes
+checking pwd.h usability... yes
+checking for sys/stat.h... yes
+checking pwd.h presence... yes
+yes
+checking for pwd.h... yes
+checking syslog.h usability... checking for stdlib.h... yes
+checking for string.h... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking sys/time.h usability... yes
+checking for memory.h... yes
+checking sys/time.h presence... yes
+checking for strings.h... yes
+checking for sys/time.h... yes
+checking glob.h usability... yes
+yes
+checking glob.h presence... checking for inttypes.h... yes
+checking for glob.h... yes
+checking unwind.h usability... yes
+checking for stdint.h... yes
+yes
+checking unwind.h presence... checking for unistd.h... yes
+checking for unwind.h... yes
+checking size of void *... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+8
+checking for uint16_t... yes
+checking if gcc supports -fno-rtti -fno-exceptions... checking for u_int16_t... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking for __uint16... no
+checking for sigaltstack... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... yes
+checking for dladdr... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+no
+checking for fcntl... yes
+checking for __attribute__... yes
+checking for __builtin_expect... yes
+checking for __sync_val_compare_and_swap... checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+yes
+checking for the pthreads library -lpthreads... checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... no
+checking whether pthreads work without any flags... yes
+checking if g++ supports -c -o file.o... no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) no
+checking for the pthreads library -llthread... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for python... /usr/bin/python
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work with -pthread... no
+checking whether pthreads work without any flags... no
+checking whether pthreads work with -Kthread... yes
+checking for joinable pthread attribute... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking whether to check for GCC pthread/shared inconsistencies... no
+checking whether pthreads work with -pthread... yes
+checking whether -pthread is sufficient with -shared... yes
+checking for joinable pthread attribute... yes
+checking for pthread_self in -lpthread... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking whether to check for GCC pthread/shared inconsistencies... yes
+checking for gtest-config... no
+yes
+checking whether -pthread is sufficient with -shared... checking support for pthread_rwlock_* functions... yes
+checking whether the compiler implements namespaces... yes
+yes
+checking what namespace STL code is in... checking that generated files are newer than configure... done
+configure: creating ./config.status
+std
+checking whether compiler supports using ::operator<<... 1
+checking for ucontext.h... (cached) yes
+checking sys/ucontext.h usability... yes
+checking sys/ucontext.h presence... yes
+checking for sys/ucontext.h... yes
+checking how to access the program counter from a struct ucontext... uc_mcontext.gregs[REG_RIP]
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating scripts/gtest-config
+config.status: creating build-aux/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make[4]: Entering directory '/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0'
+make  all-recursive
+make[5]: Entering directory '/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0'
+Making all in .
+make[6]: Entering directory '/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0'
+make[6]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0'
+Making all in src
+make[6]: Entering directory '/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src'
+  CXX      google/protobuf/compiler/code_generator.lo
+  CXX      google/protobuf/compiler/command_line_interface.lo
+  CXX      google/protobuf/compiler/plugin.lo
+  CXX      google/protobuf/compiler/plugin.pb.lo
+  CXX      google/protobuf/compiler/subprocess.lo
+  CXX      google/protobuf/compiler/zip_writer.lo
+g++ -o js_embed google/protobuf/compiler/js/embed.cc
+  CXX      google/protobuf/compiler/main.o
+  CXX      google/protobuf/stubs/atomicops_internals_x86_gcc.lo
+  CXX      google/protobuf/stubs/atomicops_internals_x86_msvc.lo
+  CXX      google/protobuf/stubs/bytestream.lo
+  CXX      google/protobuf/stubs/common.lo
+  CXX      google/protobuf/stubs/int128.lo
+  CXX      google/protobuf/stubs/io_win32.lo
+  CXX      google/protobuf/stubs/once.lo
+  CXX      google/protobuf/stubs/statusor.lo
+  CXX      google/protobuf/stubs/status.lo
+  CXX      google/protobuf/stubs/stringpiece.lo
+  CXX      google/protobuf/stubs/structurally_valid.lo
+  CXX      google/protobuf/stubs/stringprintf.lo
+  CXX      google/protobuf/stubs/strutil.lo
+  CXX      google/protobuf/stubs/time.lo
+  CXX      google/protobuf/extension_set.lo
+  CXX      google/protobuf/generated_message_util.lo
+  CXX      google/protobuf/message_lite.lo
+  CXX      google/protobuf/wire_format_lite.lo
+  CXX      google/protobuf/repeated_field.lo
+  CXX      google/protobuf/io/coded_stream.lo
+  CXX      google/protobuf/generated_message_table_driven_lite.lo
+  CXX      google/protobuf/io/zero_copy_stream.lo
+  CXX      google/protobuf/arenastring.lo
+  CXX      google/protobuf/api.pb.lo
+  CXX      google/protobuf/arena.lo
+  CXX      google/protobuf/any.lo
+  CXX      google/protobuf/descriptor.lo
+  CXX      google/protobuf/descriptor_database.lo
+  CXX      google/protobuf/io/zero_copy_stream_impl_lite.lo
+  CXX      google/protobuf/stubs/mathlimits.lo
+  CXX      google/protobuf/any.pb.lo
+configure: WARNING: unrecognized options: --with-network-isolator, --with-nl, --disable-java
+  CXX      google/protobuf/descriptor.pb.lo
+ /bin/bash ./config.status
+  CXX      google/protobuf/duration.pb.lo
+config.status: creating Makefile
+config.status: creating src/glog/logging.h
+config.status: creating src/glog/raw_logging.h
+config.status: creating src/glog/vlog_is_on.h
+  CXX      google/protobuf/dynamic_message.lo
+  CXX      google/protobuf/empty.pb.lo
+  CXX      google/protobuf/extension_set_heavy.lo
+  CXX      google/protobuf/field_mask.pb.lo
+  CXX      google/protobuf/generated_message_reflection.lo
+config.status: creating src/glog/stl_logging.h
+  CXX      google/protobuf/generated_message_table_driven.lo
+  CXX      google/protobuf/map_field.lo
+config.status: creating libglog.pc
+  CXX      google/protobuf/message.lo
+  CXX      google/protobuf/reflection_ops.lo
+  CXX      google/protobuf/service.lo
+  CXX      google/protobuf/source_context.pb.lo
+  CXX      google/protobuf/stubs/substitute.lo
+  CXX      google/protobuf/struct.pb.lo
+config.status: creating src/config.h
+  CXX      google/protobuf/text_format.lo
+  CXX      google/protobuf/timestamp.pb.lo
+config.status: src/config.h is unchanged
+  CXX      google/protobuf/type.pb.lo
+config.status: executing depfiles commands
+  CXX      google/protobuf/unknown_field_set.lo
+  CXX      google/protobuf/wire_format.lo
+  CXX      google/protobuf/wrappers.pb.lo
+  CXX      google/protobuf/io/gzip_stream.lo
+config.status: executing libtool commands
+  CXX      google/protobuf/io/printer.lo
+  CXX      google/protobuf/io/strtod.lo
+  CXX      google/protobuf/io/tokenizer.lo
+  CXX      google/protobuf/io/zero_copy_stream_impl.lo
+  CXX      google/protobuf/compiler/importer.lo
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I./src  -I./src    -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare  -DNO_FRAME_POINTER  -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-logging.lo -MD -MP -MF .deps/libglog_la-logging.Tpo -c -o libglog_la-logging.lo `test -f 'src/logging.cc' || echo './'`src/logging.cc
+  CXX      google/protobuf/compiler/parser.lo
+  CXX      google/protobuf/util/delimited_message_util.lo
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I./src -I./src -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -DNO_FRAME_POINTER -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-logging.lo -MD -MP -MF .deps/libglog_la-logging.Tpo -c src/logging.cc  -fPIC -DPIC -o libglog_la-logging.o
+  CXX      google/protobuf/util/field_comparator.lo
+  CXX      google/protobuf/util/internal/datapiece.lo
+  CXX      google/protobuf/util/field_mask_util.lo
+  CXX      google/protobuf/util/internal/default_value_objectwriter.lo
+  CXX      google/protobuf/util/internal/error_listener.lo
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I./src  -I./src    -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare  -DNO_FRAME_POINTER  -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-raw_logging.lo -MD -MP -MF .deps/libglog_la-raw_logging.Tpo -c -o libglog_la-raw_logging.lo `test -f 'src/raw_logging.cc' || echo './'`src/raw_logging.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I./src -I./src -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -DNO_FRAME_POINTER -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-raw_logging.lo -MD -MP -MF .deps/libglog_la-raw_logging.Tpo -c src/raw_logging.cc  -fPIC -DPIC -o libglog_la-raw_logging.o
+  CXX      google/protobuf/util/internal/field_mask_utility.lo
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I./src  -I./src    -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare  -DNO_FRAME_POINTER  -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-vlog_is_on.lo -MD -MP -MF .deps/libglog_la-vlog_is_on.Tpo -c -o libglog_la-vlog_is_on.lo `test -f 'src/vlog_is_on.cc' || echo './'`src/vlog_is_on.cc
+  CXX      google/protobuf/util/internal/json_escaping.lo
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I./src -I./src -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -DNO_FRAME_POINTER -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-vlog_is_on.lo -MD -MP -MF .deps/libglog_la-vlog_is_on.Tpo -c src/vlog_is_on.cc  -fPIC -DPIC -o libglog_la-vlog_is_on.o
+  CXX      google/protobuf/util/internal/json_objectwriter.lo
+mv -f .deps/libglog_la-raw_logging.Tpo .deps/libglog_la-raw_logging.Plo
+  CXX      google/protobuf/util/internal/json_stream_parser.lo
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I./src  -I./src    -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare  -DNO_FRAME_POINTER  -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-utilities.lo -MD -MP -MF .deps/libglog_la-utilities.Tpo -c -o libglog_la-utilities.lo `test -f 'src/utilities.cc' || echo './'`src/utilities.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I./src -I./src -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -DNO_FRAME_POINTER -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-utilities.lo -MD -MP -MF .deps/libglog_la-utilities.Tpo -c src/utilities.cc  -fPIC -DPIC -o libglog_la-utilities.o
+  CXX      google/protobuf/util/internal/object_writer.lo
+  CXX      google/protobuf/util/internal/protostream_objectsource.lo
+mv -f .deps/libglog_la-logging.Tpo .deps/libglog_la-logging.Plo
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I./src  -I./src    -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare  -DNO_FRAME_POINTER  -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-demangle.lo -MD -MP -MF .deps/libglog_la-demangle.Tpo -c -o libglog_la-demangle.lo `test -f 'src/demangle.cc' || echo './'`src/demangle.cc
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I./src  -I./src    -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare  -DNO_FRAME_POINTER  -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-symbolize.lo -MD -MP -MF .deps/libglog_la-symbolize.Tpo -c -o libglog_la-symbolize.lo `test -f 'src/symbolize.cc' || echo './'`src/symbolize.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I./src -I./src -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -DNO_FRAME_POINTER -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-demangle.lo -MD -MP -MF .deps/libglog_la-demangle.Tpo -c src/demangle.cc  -fPIC -DPIC -o libglog_la-demangle.o
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I./src  -I./src    -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare  -DNO_FRAME_POINTER  -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-signalhandler.lo -MD -MP -MF .deps/libglog_la-signalhandler.Tpo -c -o libglog_la-signalhandler.lo `test -f 'src/signalhandler.cc' || echo './'`src/signalhandler.cc
+  CXX      google/protobuf/util/internal/protostream_objectwriter.lo
+mv -f .deps/libglog_la-vlog_is_on.Tpo .deps/libglog_la-vlog_is_on.Plo
+  CXX      google/protobuf/util/internal/proto_writer.lo
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I./src -I./src -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -DNO_FRAME_POINTER -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-symbolize.lo -MD -MP -MF .deps/libglog_la-symbolize.Tpo -c src/symbolize.cc  -fPIC -DPIC -o libglog_la-symbolize.o
+  CXX      google/protobuf/util/internal/type_info.lo
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I./src -I./src -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -DNO_FRAME_POINTER -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -MT libglog_la-signalhandler.lo -MD -MP -MF .deps/libglog_la-signalhandler.Tpo -c src/signalhandler.cc  -fPIC -DPIC -o libglog_la-signalhandler.o
+  CXX      google/protobuf/util/internal/type_info_test_helper.lo
+mv -f .deps/libglog_la-demangle.Tpo .deps/libglog_la-demangle.Plo
+  CXX      google/protobuf/util/internal/utility.lo
+  CXX      google/protobuf/util/json_util.lo
+  CXX      google/protobuf/util/message_differencer.lo
+mv -f .deps/libglog_la-utilities.Tpo .deps/libglog_la-utilities.Plo
+  CXX      google/protobuf/util/time_util.lo
+  CXX      google/protobuf/util/type_resolver_util.lo
+  CXX      google/protobuf/compiler/cpp/cpp_enum_field.lo
+  CXX      google/protobuf/compiler/cpp/cpp_enum.lo
+  CXX      google/protobuf/compiler/cpp/cpp_extension.lo
+mv -f .deps/libglog_la-symbolize.Tpo .deps/libglog_la-symbolize.Plo
+  CXX      google/protobuf/compiler/cpp/cpp_field.lo
+  CXX      google/protobuf/compiler/cpp/cpp_generator.lo
+  CXX      google/protobuf/compiler/cpp/cpp_helpers.lo
+  CXX      google/protobuf/compiler/cpp/cpp_file.lo
+  CXX      google/protobuf/compiler/cpp/cpp_map_field.lo
+  CXX      google/protobuf/compiler/cpp/cpp_message.lo
+  CXX      google/protobuf/compiler/cpp/cpp_message_field.lo
+  CXX      google/protobuf/compiler/cpp/cpp_padding_optimizer.lo
+  CXX      google/protobuf/compiler/cpp/cpp_primitive_field.lo
+  CXX      google/protobuf/compiler/cpp/cpp_service.lo
+  CXX      google/protobuf/compiler/cpp/cpp_string_field.lo
+mv -f .deps/libglog_la-signalhandler.Tpo .deps/libglog_la-signalhandler.Plo
+/bin/bash ./libtool --tag=CXX   --mode=link g++   -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare  -DNO_FRAME_POINTER  -DNDEBUG -g1 -O0 -Wno-unused-local-typedefs -std=c++11    -o libglog.la -rpath //lib  libglog_la-logging.lo libglog_la-raw_logging.lo libglog_la-vlog_is_on.lo libglog_la-utilities.lo libglog_la-demangle.lo libglog_la-symbolize.lo libglog_la-signalhandler.lo     -lpthread 
+  CXX      google/protobuf/compiler/java/java_context.lo
+  CXX      google/protobuf/compiler/java/java_enum.lo
+libtool: link: ar cru .libs/libglog.a  libglog_la-logging.o libglog_la-raw_logging.o libglog_la-vlog_is_on.o libglog_la-utilities.o libglog_la-demangle.o libglog_la-symbolize.o libglog_la-signalhandler.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libglog.a
+  CXX      google/protobuf/compiler/java/java_enum_lite.lo
+  CXX      google/protobuf/compiler/java/java_enum_field.lo
+libtool: link: ( cd ".libs" && rm -f "libglog.la" && ln -s "../libglog.la" "libglog.la" )
+make[4]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/glog-0.3.3'
+touch glog-0.3.3-build-stamp
+  CXX      google/protobuf/compiler/java/java_enum_field_lite.lo
+  CXX      google/protobuf/compiler/java/java_extension.lo
+  CXX      google/protobuf/compiler/java/java_extension_lite.lo
+  CXX      google/protobuf/compiler/java/java_field.lo
+  CXX      google/protobuf/compiler/java/java_file.lo
+  CXX      google/protobuf/compiler/java/java_generator.lo
+  CXX      google/protobuf/compiler/java/java_generator_factory.lo
+  CXX      google/protobuf/compiler/java/java_helpers.lo
+  CXX      google/protobuf/compiler/java/java_lazy_message_field.lo
+  CXX      google/protobuf/compiler/java/java_lazy_message_field_lite.lo
+  CXX      google/protobuf/compiler/java/java_map_field.lo
+  CXX      google/protobuf/compiler/java/java_map_field_lite.lo
+  CXX      google/protobuf/compiler/java/java_message.lo
+  CXX      google/protobuf/compiler/java/java_message_lite.lo
+  CXX      google/protobuf/compiler/java/java_message_builder.lo
+  CXX      google/protobuf/compiler/java/java_message_builder_lite.lo
+  CXX      google/protobuf/compiler/java/java_message_field.lo
+  CXX      google/protobuf/compiler/java/java_message_field_lite.lo
+  CXX      google/protobuf/compiler/java/java_name_resolver.lo
+  CXX      google/protobuf/compiler/java/java_primitive_field.lo
+  CXX      google/protobuf/compiler/java/java_primitive_field_lite.lo
+  CXX      google/protobuf/compiler/java/java_shared_code_generator.lo
+  CXX      google/protobuf/compiler/java/java_service.lo
+  CXX      google/protobuf/compiler/java/java_string_field.lo
+  CXX      google/protobuf/compiler/java/java_string_field_lite.lo
+  CXX      google/protobuf/compiler/java/java_doc_comment.lo
+  CXX      google/protobuf/compiler/js/js_generator.lo
+google/protobuf/compiler/cpp/cpp_message_field.cc:54:8: warning: ‘std::__cxx11::string google::protobuf::compiler::cpp::{anonymous}::StaticCast(const string&, const string&, bool)’ defined but not used [-Wunused-function]
+ string StaticCast(const string& type, const string& expression,
+        ^
+oldpwd=`pwd` && cd . && \
+$oldpwd/js_embed google/protobuf/compiler/js/well_known_types/any.js google/protobuf/compiler/js/well_known_types/struct.js google/protobuf/compiler/js/well_known_types/timestamp.js > $oldpwd/google/protobuf/compiler/js/well_known_types_embed.cc
+  CXX      google/protobuf/compiler/javanano/javanano_enum.lo
+  CXX      google/protobuf/compiler/javanano/javanano_enum_field.lo
+  CXX      google/protobuf/compiler/javanano/javanano_extension.lo
+  CXX      google/protobuf/compiler/javanano/javanano_field.lo
+  CXX      google/protobuf/compiler/javanano/javanano_file.lo
+  CXX      google/protobuf/compiler/javanano/javanano_generator.lo
+google/protobuf/compiler/cpp/cpp_helpers.cc:62:8: warning: ‘std::__cxx11::string google::protobuf::compiler::cpp::{anonymous}::DotsToUnderscores(const string&)’ defined but not used [-Wunused-function]
+ string DotsToUnderscores(const string& name) {
+        ^
+  CXX      google/protobuf/compiler/javanano/javanano_helpers.lo
+  CXX      google/protobuf/compiler/javanano/javanano_map_field.lo
+  CXX      google/protobuf/compiler/javanano/javanano_message_field.lo
+  CXX      google/protobuf/compiler/javanano/javanano_message.lo
+  CXX      google/protobuf/compiler/javanano/javanano_primitive_field.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_enum.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_enum_field.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_extension.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_field.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_file.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_generator.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_helpers.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_map_field.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_message.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_message_field.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_oneof.lo
+  CXX      google/protobuf/compiler/objectivec/objectivec_primitive_field.lo
+  CXX      google/protobuf/compiler/php/php_generator.lo
+  CXX      google/protobuf/compiler/python/python_generator.lo
+  CXX      google/protobuf/compiler/csharp/csharp_doc_comment.lo
+  CXX      google/protobuf/compiler/ruby/ruby_generator.lo
+  CXX      google/protobuf/compiler/csharp/csharp_enum.lo
+  CXX      google/protobuf/compiler/csharp/csharp_enum_field.lo
+  CXX      google/protobuf/compiler/csharp/csharp_field_base.lo
+  CXX      google/protobuf/compiler/csharp/csharp_generator.lo
+  CXX      google/protobuf/compiler/csharp/csharp_helpers.lo
+  CXX      google/protobuf/compiler/csharp/csharp_map_field.lo
+  CXX      google/protobuf/compiler/csharp/csharp_message.lo
+  CXX      google/protobuf/compiler/csharp/csharp_message_field.lo
+  CXX      google/protobuf/compiler/csharp/csharp_primitive_field.lo
+  CXX      google/protobuf/compiler/csharp/csharp_reflection_class.lo
+  CXX      google/protobuf/compiler/csharp/csharp_repeated_enum_field.lo
+  CXX      google/protobuf/compiler/csharp/csharp_repeated_message_field.lo
+  CXX      google/protobuf/compiler/csharp/csharp_repeated_primitive_field.lo
+  CXX      google/protobuf/compiler/csharp/csharp_wrapper_field.lo
+  CXX      google/protobuf/compiler/csharp/csharp_source_generator_base.lo
+  CXX      google/protobuf/compiler/js/well_known_types_embed.lo
+  CXXLD    libprotobuf.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+google/protobuf/compiler/python/python_generator.cc:81:6: warning: ‘bool google::protobuf::compiler::python::{anonymous}::StrStartsWith(google::protobuf::StringPiece, google::protobuf::StringPiece)’ defined but not used [-Wunused-function]
+ bool StrStartsWith(StringPiece sp, StringPiece x) {
+      ^
+  CXXLD    libprotoc.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CXXLD    protoc
+oldpwd=`pwd` && ( cd . && $oldpwd/protoc -I. --cpp_out=$oldpwd google/protobuf/any_test.proto google/protobuf/compiler/cpp/cpp_test_bad_identifiers.proto google/protobuf/map_lite_unittest.proto google/protobuf/map_proto2_unittest.proto google/protobuf/map_unittest.proto google/protobuf/unittest_arena.proto google/protobuf/unittest_custom_options.proto google/protobuf/unittest_drop_unknown_fields.proto google/protobuf/unittest_embed_optimize_for.proto google/protobuf/unittest_empty.proto google/protobuf/unittest_enormous_descriptor.proto google/protobuf/unittest_import_lite.proto google/protobuf/unittest_import.proto google/protobuf/unittest_import_public_lite.proto google/protobuf/unittest_import_public.proto google/protobuf/unittest_lazy_dependencies.proto google/protobuf/unittest_lazy_dependencies_custom_option.proto google/protobuf/unittest_lazy_dependencies_enum.proto google/protobuf/unittest_lite_imports_nonlite.proto google/protobuf/unittest_lite.proto google/protobuf/unittest_mset.proto google/protobuf/unittest_mset_wire_format.proto google/protobuf/unittest_no_arena_lite.proto google/protobuf/unittest_no_arena_import.proto google/protobuf/unittest_no_arena.proto google/protobuf/unittest_no_field_presence.proto google/protobuf/unittest_no_generic_services.proto google/protobuf/unittest_optimize_for.proto google/protobuf/unittest_preserve_unknown_enum2.proto google/protobuf/unittest_preserve_unknown_enum.proto google/protobuf/unittest.proto google/protobuf/unittest_proto3_arena.proto google/protobuf/unittest_proto3_arena_lite.proto google/protobuf/unittest_proto3_lite.proto google/protobuf/unittest_well_known_types.proto google/protobuf/util/internal/testdata/anys.proto google/protobuf/util/internal/testdata/books.proto google/protobuf/util/internal/testdata/default_value.proto google/protobuf/util/internal/testdata/default_value_test.proto google/protobuf/util/internal/testdata/field_mask.proto google/protobuf/util/internal/testdata/maps.proto google/protobuf/util/internal/testdata/oneofs.proto google/protobuf/util/internal/testdata/proto3.proto google/protobuf/util/internal/testdata/struct.proto google/protobuf/util/internal/testdata/timestamp_duration.proto google/protobuf/util/internal/testdata/wrappers.proto google/protobuf/util/json_format_proto3.proto google/protobuf/util/message_differencer_unittest.proto google/protobuf/compiler/cpp/cpp_test_large_enum_value.proto )
+touch unittest_proto_middleman
+make  all-am
+make[7]: Entering directory '/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src'
+  CXXLD    libprotobuf-lite.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[7]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src'
+make[6]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src'
+make[5]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0'
+make[4]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0'
+touch protobuf-3.5.0-build-stamp
+make[3]: Leaving directory '/root/mesos-1.6.1/build/3rdparty'
+Making all in stout
+make[3]: Entering directory '/root/mesos-1.6.1/build/3rdparty/stout'
+../protobuf-3.5.0/src/protoc -I../../../3rdparty/stout/tests --cpp_out=. ../../../3rdparty/stout/tests/protobuf_tests.proto
+make  all-recursive
+make[4]: Entering directory '/root/mesos-1.6.1/build/3rdparty/stout'
+Making all in .
+make[5]: Entering directory '/root/mesos-1.6.1/build/3rdparty/stout'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/stout'
+Making all in include
+make[5]: Entering directory '/root/mesos-1.6.1/build/3rdparty/stout/include'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/stout/include'
+make[4]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/stout'
+make[3]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/stout'
+Making all in libprocess
+make[3]: Entering directory '/root/mesos-1.6.1/build/3rdparty/libprocess'
+make[4]: Entering directory '/root/mesos-1.6.1/build/3rdparty'
+touch http-parser-2.6.2-build-stamp
+make[4]: Leaving directory '/root/mesos-1.6.1/build/3rdparty'
+../protobuf-3.5.0/src/protoc -I../../../3rdparty/libprocess/src/tests --cpp_out=. ../../../3rdparty/libprocess/src/tests/benchmarks.proto
+make  all-recursive
+make[4]: Entering directory '/root/mesos-1.6.1/build/3rdparty/libprocess'
+Making all in .
+make[5]: Entering directory '/root/mesos-1.6.1/build/3rdparty/libprocess'
+  CXX      libprocess_la-authenticator.lo
+  CXX      libprocess_la-authenticator_manager.lo
+  CXX      libprocess_la-firewall.lo
+  CXX      libprocess_la-clock.lo
+  CXX      libprocess_la-gtest_constants.lo
+  CXX      libprocess_la-help.lo
+  CXX      libprocess_la-http.lo
+  CXX      libprocess_la-latch.lo
+  CXX      libprocess_la-io.lo
+  CXX      libprocess_la-logging.lo
+  CXX      libprocess_la-http_proxy.lo
+  CXX      libprocess_la-memory_profiler.lo
+  CXX      libprocess_la-metrics.lo
+  CXX      libprocess_la-mime.lo
+  CXX      libprocess_la-pid.lo
+  CXX      libprocess_la-poll_socket.lo
+  CXX      libprocess_la-process.lo
+  CXX      libprocess_la-subprocess_posix.lo
+  CXX      libprocess_la-time.lo
+  CXX      libprocess_la-profiler.lo
+  CXX      libprocess_la-reap.lo
+  CXX      libprocess_la-timeseries.lo
+  CXX      libprocess_la-libev.lo
+  CXX      libprocess_la-socket.lo
+  CXX      libprocess_la-subprocess.lo
+  CXX      libprocess_la-libev_poll.lo
+  CXXLD    libprocess.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[5]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/libprocess'
+Making all in include
+make[5]: Entering directory '/root/mesos-1.6.1/build/3rdparty/libprocess/include'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/libprocess/include'
+make[4]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/libprocess'
+make[3]: Leaving directory '/root/mesos-1.6.1/build/3rdparty/libprocess'
+make[2]: Leaving directory '/root/mesos-1.6.1/build/3rdparty'
+make[1]: Leaving directory '/root/mesos-1.6.1/build/3rdparty'
+Making all in src
+make[1]: Entering directory '/root/mesos-1.6.1/build/src'
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include/csi ../3rdparty/csi-0.2.0/csi.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/csi/state.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/messages/log.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/mesos.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/agent/agent.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/allocator/allocator.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/appc/spec.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/authentication/authentication.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/authorizer/acls.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/authorizer/authorizer.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/docker/spec.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/docker/v1.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/docker/v2.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/executor/executor.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/fetcher/fetcher.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/maintenance/maintenance.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/master/master.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/module/hook.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/module/module.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/oci/spec.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/quota/quota.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/resource_provider/resource_provider.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/scheduler/scheduler.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/slave/containerizer.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/slave/oversubscription.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/state/state.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/uri/uri.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/v1/mesos.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/v1/agent/agent.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/v1/allocator/allocator.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/v1/executor/executor.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/v1/maintenance/maintenance.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/v1/master/master.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/v1/quota/quota.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/v1/resource_provider/resource_provider.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=../include ../../include/mesos/v1/scheduler/scheduler.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/master/registry.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/messages/flags.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/messages/messages.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/resource_provider/registry.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/resource_provider/state.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/slave/containerizer/mesos/provisioner/docker/message.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/slave/containerizer/mesos/isolators/docker/volume/state.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/slave/containerizer/mesos/isolators/network/cni/spec.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/resource_provider/storage/disk_profile.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --cpp_out=. ../../src/messages/state.proto
+/bin/mkdir -p java/generated/org/apache/mesos
+/bin/mkdir -p java/generated/org/apache/mesos/executor
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/executor/executor.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/mesos.proto
+/bin/mkdir -p java/generated/org/apache/mesos/scheduler
+/bin/mkdir -p python/interface/src/mesos/interface
+/bin/mkdir -p java/generated/org/apache/mesos/v1
+/bin/mkdir -p java/generated/org/apache/mesos/v1/agent
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/v1/mesos.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include/mesos -I../../include -I../../src -I../3rdparty/csi-0.2.0			\
+	--python_out=python/interface/src/mesos/interface ../../include/mesos/mesos.proto
+/bin/mkdir -p java/generated/org/apache/mesos/v1/allocator
+/bin/mkdir -p java/generated/org/apache/mesos/v1/executor
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/v1/agent/agent.proto
+/bin/mkdir -p java/generated/org/apache/mesos/v1/maintenance
+/bin/mkdir -p java/generated/org/apache/mesos/v1/master
+/bin/mkdir -p java/generated/org/apache/mesos/v1/quota
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/v1/executor/executor.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/v1/maintenance/maintenance.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/v1/master/master.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/v1/quota/quota.proto
+/bin/mkdir -p java/generated/org/apache/mesos/v1/resource_provider
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/v1/resource_provider/resource_provider.proto
+/bin/mkdir -p java/generated/org/apache/mesos/v1/scheduler
+/bin/mkdir -p python/interface/src/mesos/v1/interface
+/bin/mkdir -p python/interface/src/mesos/v1/interface
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/v1/scheduler/scheduler.proto
+/bin/mkdir -p python/interface/src/mesos/v1/interface
+/bin/mkdir -p python/interface/src/mesos/v1/interface
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include/mesos/v1/agent -I../../include -I../../src -I../3rdparty/csi-0.2.0		\
+	--python_out=python/interface/src/mesos/v1/interface ../../include/mesos/v1/agent/agent.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/scheduler/scheduler.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include/mesos/v1/executor -I../../include -I../../src -I../3rdparty/csi-0.2.0	\
+	--python_out=python/interface/src/mesos/v1/interface ../../include/mesos/v1/executor/executor.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include -I../../src -I../3rdparty/csi-0.2.0 --java_out=java/generated ../../include/mesos/v1/allocator/allocator.proto
+/bin/mkdir -p python/interface/src/mesos/v1/interface
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include/mesos/v1/master -I../../include -I../../src -I../3rdparty/csi-0.2.0	\
+	--python_out=python/interface/src/mesos/v1/interface ../../include/mesos/v1/master/master.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include/mesos/v1/allocator -I../../include -I../../src -I../3rdparty/csi-0.2.0	\
+	--python_out=python/interface/src/mesos/v1/interface ../../include/mesos/v1/allocator/allocator.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include/mesos/v1/maintenance -I../../include -I../../src -I../3rdparty/csi-0.2.0	\
+	--python_out=python/interface/src/mesos/v1/interface ../../include/mesos/v1/maintenance/maintenance.proto
+/bin/mkdir -p python/interface/src/mesos/v1/interface
+/bin/mkdir -p python/interface/src/mesos/v1/interface
+/bin/mkdir -p python/interface/src/mesos/v1/interface
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include/mesos/v1 -I../../include -I../../src -I../3rdparty/csi-0.2.0		\
+	--python_out=python/interface/src/mesos/v1/interface ../../include/mesos/v1/mesos.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include/mesos/v1/quota -I../../include -I../../src -I../3rdparty/csi-0.2.0		\
+	--python_out=python/interface/src/mesos/v1/interface ../../include/mesos/v1/quota/quota.proto
+/bin/mkdir -p python/interface/src/mesos/v1/interface
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include/mesos/v1/resource_provider -I../../include -I../../src -I../3rdparty/csi-0.2.0	\
+	--python_out=python/interface/src/mesos/v1/interface ../../include/mesos/v1/resource_provider/resource_provider.proto
+../3rdparty/protobuf-3.5.0/src/protoc -I../../include/mesos/v1/scheduler -I../../include -I../../src -I../3rdparty/csi-0.2.0	\
+	--python_out=python/interface/src/mesos/v1/interface ../../include/mesos/v1/scheduler/scheduler.proto
+/bin/sed -i.bak 's/mesos\.mesos_pb2/mesos_pb2/' python/interface/src/mesos/v1/interface/maintenance_pb2.py && rm python/interface/src/mesos/v1/interface/maintenance_pb2.py.bak
+/bin/sed -i.bak 's/mesos\.mesos_pb2/mesos_pb2/' python/interface/src/mesos/v1/interface/executor_pb2.py && rm python/interface/src/mesos/v1/interface/executor_pb2.py.bak
+/bin/sed -i.bak 's/mesos\.mesos_pb2/mesos_pb2/' python/interface/src/mesos/v1/interface/quota_pb2.py && rm python/interface/src/mesos/v1/interface/quota_pb2.py.bak
+/bin/sed -i.bak 's/mesos\.mesos_pb2/mesos_pb2/' python/interface/src/mesos/v1/interface/allocator_pb2.py && rm python/interface/src/mesos/v1/interface/allocator_pb2.py.bak
+/bin/sed -i.bak 's/mesos\.mesos_pb2/mesos_pb2/' python/interface/src/mesos/v1/interface/master_pb2.py && rm python/interface/src/mesos/v1/interface/master_pb2.py.bak
+/bin/sed -i.bak 's/mesos\.mesos_pb2/mesos_pb2/' python/interface/src/mesos/v1/interface/resource_provider_pb2.py && rm python/interface/src/mesos/v1/interface/resource_provider_pb2.py.bak
+/bin/sed -i.bak 's/mesos\.mesos_pb2/mesos_pb2/' python/interface/src/mesos/v1/interface/agent_pb2.py && rm python/interface/src/mesos/v1/interface/agent_pb2.py.bak
+/bin/sed -i.bak 's/mesos\.mesos_pb2/mesos_pb2/' python/interface/src/mesos/v1/interface/scheduler_pb2.py && rm python/interface/src/mesos/v1/interface/scheduler_pb2.py.bak
+make  all-am
+make[2]: Entering directory '/root/mesos-1.6.1/build/src'
+  CXX      slave/containerizer/mesos/libmesos_no_3rdparty_la-linux_launcher.lo
+  CXX      slave/containerizer/mesos/isolators/docker/volume/libmesos_no_3rdparty_la-isolator.lo
+  CXX      slave/containerizer/mesos/isolators/filesystem/libmesos_no_3rdparty_la-linux.lo
+  CXX      slave/containerizer/mesos/isolators/filesystem/libmesos_no_3rdparty_la-shared.lo
+  CXX      slave/containerizer/mesos/isolators/network/cni/libmesos_no_3rdparty_la-cni.lo
+  CXX      slave/containerizer/mesos/isolators/volume/libmesos_no_3rdparty_la-host_path.lo
+  CXX      slave/containerizer/mesos/isolators/volume/libmesos_no_3rdparty_la-image.lo
+  CXX      slave/containerizer/mesos/isolators/volume/libmesos_no_3rdparty_la-secret.lo
+  CXX      slave/containerizer/mesos/provisioner/backends/libmesos_no_3rdparty_la-aufs.lo
+  CXX      slave/containerizer/mesos/provisioner/backends/libmesos_no_3rdparty_la-bind.lo
+  CXX      slave/containerizer/mesos/provisioner/backends/libmesos_no_3rdparty_la-overlay.lo
+  CXX      master/libmesos_no_3rdparty_la-registry.pb.lo
+  CXX      messages/libmesos_no_3rdparty_la-flags.pb.lo
+  CXX      messages/libmesos_no_3rdparty_la-messages.pb.lo
+  CXX      resource_provider/libmesos_no_3rdparty_la-state.pb.lo
+  CXX      resource_provider/libmesos_no_3rdparty_la-registry.pb.lo
+  CXX      slave/containerizer/mesos/provisioner/docker/libmesos_no_3rdparty_la-message.pb.lo
+  CXX      slave/containerizer/mesos/isolators/docker/volume/libmesos_no_3rdparty_la-state.pb.lo
+  CXX      slave/containerizer/mesos/isolators/network/cni/libmesos_no_3rdparty_la-spec.pb.lo
+  CXX      resource_provider/storage/libmesos_no_3rdparty_la-disk_profile.pb.lo
+  CXX      common/libbuild_la-build.lo
+  CXX      messages/liblog_la-log.pb.lo
+  CXX      messages/libstate_la-state.pb.lo
+  CXX      slave/container_loggers/liblogrotate_container_logger_la-lib_logrotate.lo
+  CXX      slave/resource_estimators/libfixed_resource_estimator_la-fixed.lo
+  CXX      resource_provider/storage/liburi_disk_profile_adaptor_la-uri_disk_profile_adaptor.lo
+  CXX      slave/qos_controllers/libload_qos_controller_la-load.lo
+  CXX      local/mesos_local-main.o
+  CXX      log/mesos_log-main.o
+  CXX      slave/containerizer/mesos/mesos_containerizer-main.o
+  CXX      slave/containerizer/mesos/isolators/network/cni/plugins/port_mapper/mesos_cni_port_mapper-main.o
+  CXX      slave/containerizer/mesos/io/mesos_io_switchboard-switchboard_main.o
+  CXX      slave/container_loggers/mesos_logrotate_logger-logrotate.o
+  CXX      usage/mesos_usage-main.o
+  CXX      slave/containerizer/mesos/isolators/network/mesos_network_helper-helper.o
+  CXX      docker/mesos_docker_executor-executor.o
+  CXX      checks/mesos_tcp_connect-tcp_connect.o
+  CXX      master/mesos_master-main.o
+  CXX      slave/mesos_agent-main.o
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/cli/src/mesos && cp -pf ../../src/python/cli/src/mesos/__init__.py python/cli/src/mesos/__init__.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/cli/src/mesos && cp -pf ../../src/python/cli/src/mesos/cli.py python/cli/src/mesos/cli.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/cli/src/mesos && cp -pf ../../src/python/cli/src/mesos/futures.py python/cli/src/mesos/futures.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/cli/src/mesos && cp -pf ../../src/python/cli/src/mesos/http.py python/cli/src/mesos/http.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/interface/src/mesos && cp -pf ../../src/python/interface/src/mesos/__init__.py python/interface/src/mesos/__init__.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/interface/src/mesos/interface && cp -pf ../../src/python/interface/src/mesos/interface/__init__.py python/interface/src/mesos/interface/__init__.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/interface/src/mesos/v1 && cp -pf ../../src/python/interface/src/mesos/v1/__init__.py python/interface/src/mesos/v1/__init__.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/interface/src/mesos/v1/interface && cp -pf ../../src/python/interface/src/mesos/v1/interface/__init__.py python/interface/src/mesos/v1/interface/__init__.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/native_common && cp -pf ../../src/python/native_common/common.hpp python/native_common/common.hpp)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/native/src/mesos && cp -pf ../../src/python/native/src/mesos/__init__.py python/native/src/mesos/__init__.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/native/src/mesos/native && cp -pf ../../src/python/native/src/mesos/native/__init__.py python/native/src/mesos/native/__init__.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/executor/src/mesos && cp -pf ../../src/python/executor/src/mesos/__init__.py python/executor/src/mesos/__init__.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/executor/src/mesos/executor && cp -pf ../../src/python/executor/src/mesos/executor/__init__.py python/executor/src/mesos/executor/__init__.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/executor/src/mesos/executor && cp -pf ../../src/python/executor/src/mesos/executor/mesos_executor_driver_impl.cpp python/executor/src/mesos/executor/mesos_executor_driver_impl.cpp)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/executor/src/mesos/executor && cp -pf ../../src/python/executor/src/mesos/executor/mesos_executor_driver_impl.hpp python/executor/src/mesos/executor/mesos_executor_driver_impl.hpp)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/executor/src/mesos/executor && cp -pf ../../src/python/executor/src/mesos/executor/module.cpp python/executor/src/mesos/executor/module.cpp)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/executor/src/mesos/executor && cp -pf ../../src/python/executor/src/mesos/executor/proxy_executor.cpp python/executor/src/mesos/executor/proxy_executor.cpp)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/executor/src/mesos/executor && cp -pf ../../src/python/executor/src/mesos/executor/proxy_executor.hpp python/executor/src/mesos/executor/proxy_executor.hpp)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/scheduler/src/mesos && cp -pf ../../src/python/scheduler/src/mesos/__init__.py python/scheduler/src/mesos/__init__.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/scheduler/src/mesos/scheduler && cp -pf ../../src/python/scheduler/src/mesos/scheduler/__init__.py python/scheduler/src/mesos/scheduler/__init__.py)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/scheduler/src/mesos/scheduler && cp -pf ../../src/python/scheduler/src/mesos/scheduler/mesos_scheduler_driver_impl.cpp python/scheduler/src/mesos/scheduler/mesos_scheduler_driver_impl.cpp)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/scheduler/src/mesos/scheduler && cp -pf ../../src/python/scheduler/src/mesos/scheduler/mesos_scheduler_driver_impl.hpp python/scheduler/src/mesos/scheduler/mesos_scheduler_driver_impl.hpp)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/scheduler/src/mesos/scheduler && cp -pf ../../src/python/scheduler/src/mesos/scheduler/module.cpp python/scheduler/src/mesos/scheduler/module.cpp)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/scheduler/src/mesos/scheduler && cp -pf ../../src/python/scheduler/src/mesos/scheduler/proxy_scheduler.cpp python/scheduler/src/mesos/scheduler/proxy_scheduler.cpp)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/scheduler/src/mesos/scheduler && cp -pf ../../src/python/scheduler/src/mesos/scheduler/proxy_scheduler.hpp python/scheduler/src/mesos/scheduler/proxy_scheduler.hpp)
+test "../.." = ".." ||			\
+	(/bin/mkdir -p python/src/mesos && cp -pf ../../src/python/src/mesos/__init__.py python/src/mesos/__init__.py)
+Building protobuf Python egg ...
+cd ../3rdparty/protobuf-3.5.0/python &&			\
+  CC="gcc"					\
+  CXX="g++"					\
+  CFLAGS="-g1 -O0 -Wno-unused-local-typedefs"				\
+  CXXFLAGS="-g1 -O0 -Wno-unused-local-typedefs -std=c++11"			\
+  PYTHONPATH=/root/mesos-1.6.1/build/3rdparty/setuptools-20.9.0	\
+  /usr/bin/python setup.py build bdist_egg
+running build
+running build_py
+  CXX      appc/libmesos_no_3rdparty_la-spec.lo
+Generating google/protobuf/descriptor_pb2.py...
+Generating google/protobuf/compiler/plugin_pb2.py...
+Generating google/protobuf/any_pb2.py...
+Generating google/protobuf/api_pb2.py...
+Generating google/protobuf/duration_pb2.py...
+Generating google/protobuf/empty_pb2.py...
+Generating google/protobuf/field_mask_pb2.py...
+Generating google/protobuf/source_context_pb2.py...
+Generating google/protobuf/struct_pb2.py...
+Generating google/protobuf/timestamp_pb2.py...
+Generating google/protobuf/type_pb2.py...
+Generating google/protobuf/wrappers_pb2.py...
+Generating google/protobuf/any_test_pb2.py...
+Generating google/protobuf/map_proto2_unittest_pb2.py...
+Generating google/protobuf/map_unittest_pb2.py...
+Generating google/protobuf/test_messages_proto3_pb2.py...
+Generating google/protobuf/test_messages_proto2_pb2.py...
+Generating google/protobuf/unittest_arena_pb2.py...
+Generating google/protobuf/unittest_no_arena_pb2.py...
+Generating google/protobuf/unittest_no_arena_import_pb2.py...
+Generating google/protobuf/unittest_pb2.py...
+Generating google/protobuf/unittest_custom_options_pb2.py...
+Generating google/protobuf/unittest_import_pb2.py...
+Generating google/protobuf/unittest_import_public_pb2.py...
+Generating google/protobuf/unittest_mset_pb2.py...
+Generating google/protobuf/unittest_mset_wire_format_pb2.py...
+Generating google/protobuf/unittest_no_generic_services_pb2.py...
+Generating google/protobuf/unittest_proto3_arena_pb2.py...
+Generating google/protobuf/util/json_format_proto3_pb2.py...
+Generating google/protobuf/internal/any_test_pb2.py...
+Generating google/protobuf/internal/descriptor_pool_test1_pb2.py...
+Generating google/protobuf/internal/descriptor_pool_test2_pb2.py...
+Generating google/protobuf/internal/factory_test1_pb2.py...
+Generating google/protobuf/internal/factory_test2_pb2.py...
+Generating google/protobuf/internal/file_options_test_pb2.py...
+Generating google/protobuf/internal/import_test_package/inner_pb2.py...
+Generating google/protobuf/internal/import_test_package/outer_pb2.py...
+Generating google/protobuf/internal/missing_enum_values_pb2.py...
+Generating google/protobuf/internal/message_set_extensions_pb2.py...
+Generating google/protobuf/internal/more_extensions_pb2.py...
+Generating google/protobuf/internal/more_extensions_dynamic_pb2.py...
+Generating google/protobuf/internal/more_messages_pb2.py...
+Generating google/protobuf/internal/packed_field_test_pb2.py...
+Generating google/protobuf/internal/test_bad_identifiers_pb2.py...
+Generating google/protobuf/pyext/python_pb2.py...
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/google
+copying google/__init__.py -> build/lib.linux-x86_64-2.7/google
+creating build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/unittest_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/struct_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/wrappers_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/duration_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/descriptor.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/unittest_custom_options_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/unittest_no_arena_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/text_format.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/message_factory.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/unittest_no_arena_import_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/unittest_no_generic_services_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/service.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/map_proto2_unittest_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/reflection.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/map_unittest_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/text_encoding.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/empty_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/descriptor_database.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/unittest_import_public_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/field_mask_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/json_format.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/type_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/proto_builder.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/any_test_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/test_messages_proto3_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/__init__.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/test_messages_proto2_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/unittest_arena_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/message.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/api_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/symbol_database.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/descriptor_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/descriptor_pool.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/source_context_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/unittest_mset_wire_format_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/unittest_mset_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/unittest_import_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/timestamp_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/any_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/service_reflection.py -> build/lib.linux-x86_64-2.7/google/protobuf
+copying google/protobuf/unittest_proto3_arena_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf
+creating build/lib.linux-x86_64-2.7/google/protobuf/pyext
+copying google/protobuf/pyext/__init__.py -> build/lib.linux-x86_64-2.7/google/protobuf/pyext
+copying google/protobuf/pyext/cpp_message.py -> build/lib.linux-x86_64-2.7/google/protobuf/pyext
+copying google/protobuf/pyext/python_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/pyext
+creating build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/decoder.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/message_set_extensions_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/test_bad_identifiers_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/json_format_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/unknown_fields_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/packed_field_test_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/python_message.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/more_messages_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/descriptor_pool_test1_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/wire_format.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/service_reflection_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/text_format_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/encoder.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/generator_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/symbol_database_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/more_extensions_dynamic_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/testing_refleaks.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/descriptor_database_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/well_known_types.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/test_util.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/more_extensions_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/containers.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/_parameterized.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/well_known_types_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/proto_builder_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/missing_enum_values_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/factory_test1_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/api_implementation.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/any_test_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/__init__.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/descriptor_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/reflection_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/message_listener.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/wire_format_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/factory_test2_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/message_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/text_encoding_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/enum_type_wrapper.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/descriptor_pool_test2_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/type_checkers.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/file_options_test_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/message_factory_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+copying google/protobuf/internal/descriptor_pool_test.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal
+creating build/lib.linux-x86_64-2.7/google/protobuf/internal/import_test_package
+copying google/protobuf/internal/import_test_package/outer_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal/import_test_package
+copying google/protobuf/internal/import_test_package/__init__.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal/import_test_package
+copying google/protobuf/internal/import_test_package/inner_pb2.py -> build/lib.linux-x86_64-2.7/google/protobuf/internal/import_test_package
+running bdist_egg
+running egg_info
+creating protobuf.egg-info
+writing requirements to protobuf.egg-info/requires.txt
+writing protobuf.egg-info/PKG-INFO
+writing namespace_packages to protobuf.egg-info/namespace_packages.txt
+writing top-level names to protobuf.egg-info/top_level.txt
+writing dependency_links to protobuf.egg-info/dependency_links.txt
+writing manifest file 'protobuf.egg-info/SOURCES.txt'
+reading manifest file 'protobuf.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files found matching 'google/protobuf/internal/*.proto'
+warning: no previously-included files matching '*_test.py' found under directory 'google'
+warning: no previously-included files matching '*_test.proto' found under directory 'google'
+warning: no previously-included files matching '*.dll' found anywhere in distribution
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+warning: no previously-included files matching '*.pyo' found anywhere in distribution
+warning: no previously-included files matching '*.so' found anywhere in distribution
+writing manifest file 'protobuf.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/google
+creating build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/unittest_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/struct_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/wrappers_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/duration_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/descriptor.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/unittest_custom_options_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+creating build/bdist.linux-x86_64/egg/google/protobuf/pyext
+copying build/lib.linux-x86_64-2.7/google/protobuf/pyext/__init__.py -> build/bdist.linux-x86_64/egg/google/protobuf/pyext
+copying build/lib.linux-x86_64-2.7/google/protobuf/pyext/cpp_message.py -> build/bdist.linux-x86_64/egg/google/protobuf/pyext
+copying build/lib.linux-x86_64-2.7/google/protobuf/pyext/python_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/pyext
+copying build/lib.linux-x86_64-2.7/google/protobuf/unittest_no_arena_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/text_format.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/message_factory.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/unittest_no_arena_import_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/unittest_no_generic_services_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/service.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/map_proto2_unittest_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/reflection.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/map_unittest_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/text_encoding.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/empty_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/descriptor_database.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/unittest_import_public_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/field_mask_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/json_format.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/type_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/proto_builder.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/any_test_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/test_messages_proto3_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/__init__.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/test_messages_proto2_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/unittest_arena_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/message.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/api_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/symbol_database.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/descriptor_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+creating build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/decoder.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/message_set_extensions_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/test_bad_identifiers_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/json_format_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/unknown_fields_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/packed_field_test_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/python_message.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/more_messages_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/descriptor_pool_test1_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/wire_format.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/service_reflection_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/text_format_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/encoder.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/generator_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/symbol_database_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/more_extensions_dynamic_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/testing_refleaks.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/descriptor_database_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/well_known_types.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/test_util.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/more_extensions_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/containers.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/_parameterized.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/well_known_types_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/proto_builder_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/missing_enum_values_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/factory_test1_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/api_implementation.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/any_test_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/__init__.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/descriptor_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/reflection_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/message_listener.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/wire_format_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/factory_test2_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/message_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/text_encoding_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/enum_type_wrapper.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/descriptor_pool_test2_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/type_checkers.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/file_options_test_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/message_factory_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/descriptor_pool_test.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal
+creating build/bdist.linux-x86_64/egg/google/protobuf/internal/import_test_package
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/import_test_package/outer_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal/import_test_package
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/import_test_package/__init__.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal/import_test_package
+copying build/lib.linux-x86_64-2.7/google/protobuf/internal/import_test_package/inner_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf/internal/import_test_package
+copying build/lib.linux-x86_64-2.7/google/protobuf/descriptor_pool.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/source_context_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/unittest_mset_wire_format_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/unittest_mset_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/unittest_import_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/timestamp_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/any_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/service_reflection.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/protobuf/unittest_proto3_arena_pb2.py -> build/bdist.linux-x86_64/egg/google/protobuf
+copying build/lib.linux-x86_64-2.7/google/__init__.py -> build/bdist.linux-x86_64/egg/google
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/unittest_pb2.py to unittest_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/struct_pb2.py to struct_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/wrappers_pb2.py to wrappers_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/duration_pb2.py to duration_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/descriptor.py to descriptor.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/unittest_custom_options_pb2.py to unittest_custom_options_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/pyext/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/pyext/cpp_message.py to cpp_message.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/pyext/python_pb2.py to python_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/unittest_no_arena_pb2.py to unittest_no_arena_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/text_format.py to text_format.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/message_factory.py to message_factory.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/unittest_no_arena_import_pb2.py to unittest_no_arena_import_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/unittest_no_generic_services_pb2.py to unittest_no_generic_services_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/service.py to service.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/map_proto2_unittest_pb2.py to map_proto2_unittest_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/reflection.py to reflection.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/map_unittest_pb2.py to map_unittest_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/text_encoding.py to text_encoding.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/empty_pb2.py to empty_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/descriptor_database.py to descriptor_database.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/unittest_import_public_pb2.py to unittest_import_public_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/field_mask_pb2.py to field_mask_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/json_format.py to json_format.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/type_pb2.py to type_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/proto_builder.py to proto_builder.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/any_test_pb2.py to any_test_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/test_messages_proto3_pb2.py to test_messages_proto3_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/test_messages_proto2_pb2.py to test_messages_proto2_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/unittest_arena_pb2.py to unittest_arena_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/message.py to message.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/api_pb2.py to api_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/symbol_database.py to symbol_database.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/descriptor_pb2.py to descriptor_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/decoder.py to decoder.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/message_set_extensions_pb2.py to message_set_extensions_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/test_bad_identifiers_pb2.py to test_bad_identifiers_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/json_format_test.py to json_format_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/unknown_fields_test.py to unknown_fields_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/packed_field_test_pb2.py to packed_field_test_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/python_message.py to python_message.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/more_messages_pb2.py to more_messages_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/descriptor_pool_test1_pb2.py to descriptor_pool_test1_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/wire_format.py to wire_format.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/service_reflection_test.py to service_reflection_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/text_format_test.py to text_format_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/encoder.py to encoder.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/generator_test.py to generator_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/symbol_database_test.py to symbol_database_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/more_extensions_dynamic_pb2.py to more_extensions_dynamic_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/testing_refleaks.py to testing_refleaks.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/descriptor_database_test.py to descriptor_database_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/well_known_types.py to well_known_types.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/test_util.py to test_util.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/more_extensions_pb2.py to more_extensions_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/containers.py to containers.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/_parameterized.py to _parameterized.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/well_known_types_test.py to well_known_types_test.pyc
+  CXX      authentication/cram_md5/libmesos_no_3rdparty_la-authenticatee.lo
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/proto_builder_test.py to proto_builder_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/missing_enum_values_pb2.py to missing_enum_values_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/factory_test1_pb2.py to factory_test1_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/api_implementation.py to api_implementation.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/any_test_pb2.py to any_test_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/descriptor_test.py to descriptor_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/reflection_test.py to reflection_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/message_listener.py to message_listener.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/wire_format_test.py to wire_format_test.pyc
+  CXX      authentication/cram_md5/libmesos_no_3rdparty_la-authenticator.lo
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/factory_test2_pb2.py to factory_test2_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/message_test.py to message_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/text_encoding_test.py to text_encoding_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/enum_type_wrapper.py to enum_type_wrapper.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/descriptor_pool_test2_pb2.py to descriptor_pool_test2_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/type_checkers.py to type_checkers.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/file_options_test_pb2.py to file_options_test_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/message_factory_test.py to message_factory_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/descriptor_pool_test.py to descriptor_pool_test.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/import_test_package/outer_pb2.py to outer_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/import_test_package/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/internal/import_test_package/inner_pb2.py to inner_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/descriptor_pool.py to descriptor_pool.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/source_context_pb2.py to source_context_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/unittest_mset_wire_format_pb2.py to unittest_mset_wire_format_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/unittest_mset_pb2.py to unittest_mset_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/unittest_import_pb2.py to unittest_import_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/timestamp_pb2.py to timestamp_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/any_pb2.py to any_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/service_reflection.py to service_reflection.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/protobuf/unittest_proto3_arena_pb2.py to unittest_proto3_arena_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/google/__init__.py to __init__.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying protobuf.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying protobuf.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying protobuf.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying protobuf.egg-info/namespace_packages.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying protobuf.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying protobuf.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+google.__init__: module references __path__
+google.protobuf.__init__: module references __path__
+google.protobuf.pyext.__init__: module references __path__
+creating dist
+  CXX      authentication/cram_md5/libmesos_no_3rdparty_la-auxprop.lo
+creating 'dist/protobuf-3.5.0-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+  CXX      authentication/http/libmesos_no_3rdparty_la-basic_authenticatee.lo
+  CXX      authentication/http/libmesos_no_3rdparty_la-basic_authenticator_factory.lo
+  CXX      authentication/http/libmesos_no_3rdparty_la-combined_authenticator.lo
+  CXX      authorizer/libmesos_no_3rdparty_la-acls.lo
+  CXX      authorizer/libmesos_no_3rdparty_la-authorizer.lo
+  CXX      authorizer/local/libmesos_no_3rdparty_la-authorizer.lo
+  CXX      checks/libmesos_no_3rdparty_la-checker.lo
+  CXX      checks/libmesos_no_3rdparty_la-checker_process.lo
+  CXX      checks/libmesos_no_3rdparty_la-health_checker.lo
+  CXX      common/libmesos_no_3rdparty_la-attributes.lo
+  CXX      common/libmesos_no_3rdparty_la-command_utils.lo
+  CXX      common/libmesos_no_3rdparty_la-http.lo
+  CXX      common/libmesos_no_3rdparty_la-protobuf_utils.lo
+  CXX      common/libmesos_no_3rdparty_la-resources.lo
+  CXX      common/libmesos_no_3rdparty_la-resources_utils.lo
+  CXX      common/libmesos_no_3rdparty_la-roles.lo
+  CXX      common/libmesos_no_3rdparty_la-type_utils.lo
+  CXX      common/libmesos_no_3rdparty_la-validation.lo
+  CXX      common/libmesos_no_3rdparty_la-values.lo
+  CXX      docker/libmesos_no_3rdparty_la-docker.lo
+  CXX      docker/libmesos_no_3rdparty_la-spec.lo
+  CXX      exec/libmesos_no_3rdparty_la-exec.lo
+  CXX      executor/libmesos_no_3rdparty_la-executor.lo
+  CXX      executor/libmesos_no_3rdparty_la-v0_v1executor.lo
+  CXX      files/libmesos_no_3rdparty_la-files.lo
+  CXX      hdfs/libmesos_no_3rdparty_la-hdfs.lo
+  CXX      hook/libmesos_no_3rdparty_la-manager.lo
+  CXX      internal/libmesos_no_3rdparty_la-devolve.lo
+  CXX      internal/libmesos_no_3rdparty_la-evolve.lo
+  CXX      local/libmesos_no_3rdparty_la-local.lo
+  CXX      logging/libmesos_no_3rdparty_la-flags.lo
+  CXX      logging/libmesos_no_3rdparty_la-logging.lo
+  CXX      master/libmesos_no_3rdparty_la-constants.lo
+  CXX      master/libmesos_no_3rdparty_la-flags.lo
+  CXX      master/libmesos_no_3rdparty_la-http.lo
+  CXX      master/libmesos_no_3rdparty_la-maintenance.lo
+  CXX      master/libmesos_no_3rdparty_la-master.lo
+  CXX      master/libmesos_no_3rdparty_la-metrics.lo
+  CXX      master/libmesos_no_3rdparty_la-quota.lo
+  CXX      master/libmesos_no_3rdparty_la-registrar.lo
+  CXX      master/libmesos_no_3rdparty_la-quota_handler.lo
+  CXX      master/libmesos_no_3rdparty_la-registry_operations.lo
+  CXX      master/libmesos_no_3rdparty_la-validation.lo
+  CXX      master/libmesos_no_3rdparty_la-weights.lo
+  CXX      master/libmesos_no_3rdparty_la-weights_handler.lo
+  CXX      master/allocator/libmesos_no_3rdparty_la-allocator.lo
+  CXX      master/allocator/mesos/libmesos_no_3rdparty_la-hierarchical.lo
+  CXX      master/allocator/mesos/libmesos_no_3rdparty_la-metrics.lo
+  CXX      master/allocator/sorter/drf/libmesos_no_3rdparty_la-metrics.lo
+  CXX      master/allocator/sorter/drf/libmesos_no_3rdparty_la-sorter.lo
+  CXX      master/allocator/sorter/random/libmesos_no_3rdparty_la-sorter.lo
+  CXX      master/contender/libmesos_no_3rdparty_la-contender.lo
+  CXX      master/contender/libmesos_no_3rdparty_la-standalone.lo
+  CXX      master/contender/libmesos_no_3rdparty_la-zookeeper.lo
+  CXX      master/detector/libmesos_no_3rdparty_la-detector.lo
+  CXX      master/detector/libmesos_no_3rdparty_la-standalone.lo
+  CXX      master/detector/libmesos_no_3rdparty_la-zookeeper.lo
+  CXX      messages/libmesos_no_3rdparty_la-messages.lo
+  CXX      module/libmesos_no_3rdparty_la-manager.lo
+  CXX      oci/libmesos_no_3rdparty_la-spec.lo
+  CXX      posix/libmesos_no_3rdparty_la-rlimits.lo
+  CXX      resource_provider/libmesos_no_3rdparty_la-daemon.lo
+  CXX      resource_provider/libmesos_no_3rdparty_la-detector.lo
+  CXX      resource_provider/libmesos_no_3rdparty_la-driver.lo
+  CXX      resource_provider/libmesos_no_3rdparty_la-local.lo
+  CXX      resource_provider/libmesos_no_3rdparty_la-manager.lo
+  CXX      resource_provider/libmesos_no_3rdparty_la-registrar.lo
+  CXX      resource_provider/libmesos_no_3rdparty_la-validation.lo
+  CXX      sched/libmesos_no_3rdparty_la-sched.lo
+  CXX      scheduler/libmesos_no_3rdparty_la-scheduler.lo
+  CXX      secret/libmesos_no_3rdparty_la-resolver.lo
+  CXX      slave/libmesos_no_3rdparty_la-compatibility.lo
+  CXX      slave/libmesos_no_3rdparty_la-constants.lo
+  CXX      slave/libmesos_no_3rdparty_la-container_daemon.lo
+  CXX      slave/libmesos_no_3rdparty_la-container_logger.lo
+  CXX      slave/libmesos_no_3rdparty_la-flags.lo
+  CXX      slave/libmesos_no_3rdparty_la-gc.lo
+  CXX      slave/libmesos_no_3rdparty_la-http.lo
+  CXX      slave/libmesos_no_3rdparty_la-metrics.lo
+  CXX      slave/libmesos_no_3rdparty_la-paths.lo
+  CXX      slave/libmesos_no_3rdparty_la-qos_controller.lo
+  CXX      slave/qos_controllers/libmesos_no_3rdparty_la-noop.lo
+  CXX      slave/libmesos_no_3rdparty_la-resource_estimator.lo
+  CXX      slave/libmesos_no_3rdparty_la-slave.lo
+  CXX      slave/libmesos_no_3rdparty_la-state.lo
+  CXX      slave/libmesos_no_3rdparty_la-validation.lo
+  CXX      slave/libmesos_no_3rdparty_la-task_status_update_manager.lo
+  CXX      slave/container_loggers/libmesos_no_3rdparty_la-sandbox.lo
+  CXX      slave/containerizer/libmesos_no_3rdparty_la-composing.lo
+  CXX      slave/containerizer/libmesos_no_3rdparty_la-containerizer.lo
+  CXX      slave/containerizer/libmesos_no_3rdparty_la-docker.lo
+  CXX      slave/containerizer/libmesos_no_3rdparty_la-fetcher.lo
+  CXX      slave/containerizer/mesos/libmesos_no_3rdparty_la-containerizer.lo
+  CXX      slave/containerizer/mesos/libmesos_no_3rdparty_la-launch.lo
+  CXX      slave/containerizer/mesos/libmesos_no_3rdparty_la-isolator.lo
+  CXX      slave/containerizer/mesos/libmesos_no_3rdparty_la-launcher.lo
+  CXX      slave/containerizer/mesos/libmesos_no_3rdparty_la-mount.lo
+  CXX      slave/containerizer/mesos/libmesos_no_3rdparty_la-paths.lo
+  CXX      slave/containerizer/mesos/libmesos_no_3rdparty_la-utils.lo
+  CXX      slave/containerizer/mesos/io/libmesos_no_3rdparty_la-switchboard.lo
+  CXX      slave/containerizer/mesos/isolators/libmesos_no_3rdparty_la-environment_secret.lo
+  CXX      slave/containerizer/mesos/isolators/docker/volume/libmesos_no_3rdparty_la-driver.lo
+  CXX      slave/containerizer/mesos/isolators/docker/volume/libmesos_no_3rdparty_la-paths.lo
+  CXX      slave/containerizer/mesos/isolators/filesystem/libmesos_no_3rdparty_la-posix.lo
+  CXX      slave/containerizer/mesos/isolators/network/cni/libmesos_no_3rdparty_la-paths.lo
+  CXX      slave/containerizer/mesos/isolators/network/cni/libmesos_no_3rdparty_la-spec.lo
+  CXX      slave/containerizer/mesos/isolators/posix/libmesos_no_3rdparty_la-disk.lo
+  CXX      slave/containerizer/mesos/isolators/posix/libmesos_no_3rdparty_la-rlimits.lo
+  CXX      slave/containerizer/mesos/isolators/volume/libmesos_no_3rdparty_la-sandbox_path.lo
+  CXX      slave/containerizer/mesos/provisioner/libmesos_no_3rdparty_la-backend.lo
+  CXX      slave/containerizer/mesos/provisioner/libmesos_no_3rdparty_la-paths.lo
+  CXX      slave/containerizer/mesos/provisioner/libmesos_no_3rdparty_la-provisioner.lo
+  CXX      slave/containerizer/mesos/provisioner/libmesos_no_3rdparty_la-store.lo
+  CXX      slave/containerizer/mesos/provisioner/libmesos_no_3rdparty_la-utils.lo
+  CXX      slave/containerizer/mesos/provisioner/appc/libmesos_no_3rdparty_la-cache.lo
+  CXX      slave/containerizer/mesos/provisioner/appc/libmesos_no_3rdparty_la-fetcher.lo
+  CXX      slave/containerizer/mesos/provisioner/appc/libmesos_no_3rdparty_la-paths.lo
+  CXX      slave/containerizer/mesos/provisioner/appc/libmesos_no_3rdparty_la-store.lo
+  CXX      slave/containerizer/mesos/provisioner/backends/libmesos_no_3rdparty_la-copy.lo
+  CXX      slave/containerizer/mesos/provisioner/docker/libmesos_no_3rdparty_la-local_puller.lo
+  CXX      slave/containerizer/mesos/provisioner/docker/libmesos_no_3rdparty_la-metadata_manager.lo
+  CXX      slave/containerizer/mesos/provisioner/docker/libmesos_no_3rdparty_la-paths.lo
+  CXX      slave/containerizer/mesos/provisioner/docker/libmesos_no_3rdparty_la-puller.lo
+  CXX      slave/containerizer/mesos/provisioner/docker/libmesos_no_3rdparty_la-registry_puller.lo
+  CXX      slave/containerizer/mesos/provisioner/docker/libmesos_no_3rdparty_la-store.lo
+  CXX      slave/resource_estimators/libmesos_no_3rdparty_la-noop.lo
+  CXX      status_update_manager/libmesos_no_3rdparty_la-operation.lo
+  CXX      uri/libmesos_no_3rdparty_la-fetcher.lo
+  CXX      uri/libmesos_no_3rdparty_la-utils.lo
+  CXX      uri/fetchers/libmesos_no_3rdparty_la-copy.lo
+  CXX      uri/fetchers/libmesos_no_3rdparty_la-curl.lo
+  CXX      uri/fetchers/libmesos_no_3rdparty_la-docker.lo
+  CXX      uri/fetchers/libmesos_no_3rdparty_la-hadoop.lo
+  CXX      usage/libmesos_no_3rdparty_la-usage.lo
+  CXX      v1/libmesos_no_3rdparty_la-attributes.lo
+  CXX      v1/libmesos_no_3rdparty_la-mesos.lo
+  CXX      v1/libmesos_no_3rdparty_la-resources.lo
+  CXX      v1/libmesos_no_3rdparty_la-values.lo
+  CXX      version/libmesos_no_3rdparty_la-version.lo
+  CXX      watcher/libmesos_no_3rdparty_la-whitelist_watcher.lo
+  CXX      zookeeper/libmesos_no_3rdparty_la-authentication.lo
+  CXX      zookeeper/libmesos_no_3rdparty_la-contender.lo
+  CXX      zookeeper/libmesos_no_3rdparty_la-detector.lo
+  CXX      zookeeper/libmesos_no_3rdparty_la-zookeeper.lo
+  CXX      zookeeper/libmesos_no_3rdparty_la-group.lo
+  CXX      linux/routing/libmesos_no_3rdparty_la-handle.lo
+  CXX      linux/routing/libmesos_no_3rdparty_la-route.lo
+  CXX      linux/routing/libmesos_no_3rdparty_la-utils.lo
+  CXX      linux/routing/diagnosis/libmesos_no_3rdparty_la-diagnosis.lo
+  CXX      linux/routing/filter/libmesos_no_3rdparty_la-basic.lo
+  CXX      linux/routing/filter/libmesos_no_3rdparty_la-icmp.lo
+  CXX      linux/routing/filter/libmesos_no_3rdparty_la-ip.lo
+  CXX      linux/routing/link/libmesos_no_3rdparty_la-link.lo
+  CXX      linux/routing/link/libmesos_no_3rdparty_la-veth.lo
+  CXX      linux/routing/queueing/libmesos_no_3rdparty_la-fq_codel.lo
+  CXX      linux/routing/queueing/libmesos_no_3rdparty_la-htb.lo
+  CXX      linux/routing/queueing/libmesos_no_3rdparty_la-ingress.lo
+  CXX      slave/containerizer/mesos/isolators/network/libmesos_no_3rdparty_la-port_mapping.lo
+  CXX      linux/libmesos_no_3rdparty_la-capabilities.lo
+  CXX      linux/libmesos_no_3rdparty_la-cgroups.lo
+  CXX      linux/libmesos_no_3rdparty_la-fs.lo
+  CXX      linux/libmesos_no_3rdparty_la-ldcache.lo
+  CXX      linux/libmesos_no_3rdparty_la-ldd.lo
+  CXX      linux/libmesos_no_3rdparty_la-ns.lo
+  CXX      linux/libmesos_no_3rdparty_la-perf.lo
+  CXX      linux/libmesos_no_3rdparty_la-systemd.lo
+  CXX      slave/containerizer/mesos/isolators/appc/libmesos_no_3rdparty_la-runtime.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/libmesos_no_3rdparty_la-cgroups.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/libmesos_no_3rdparty_la-subsystem.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/subsystems/libmesos_no_3rdparty_la-blkio.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/subsystems/libmesos_no_3rdparty_la-cpu.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/subsystems/libmesos_no_3rdparty_la-cpuacct.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/subsystems/libmesos_no_3rdparty_la-cpuset.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/subsystems/libmesos_no_3rdparty_la-devices.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/subsystems/libmesos_no_3rdparty_la-hugetlb.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/subsystems/libmesos_no_3rdparty_la-memory.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/subsystems/libmesos_no_3rdparty_la-net_cls.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/subsystems/libmesos_no_3rdparty_la-net_prio.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/subsystems/libmesos_no_3rdparty_la-perf_event.lo
+  CXX      slave/containerizer/mesos/isolators/cgroups/subsystems/libmesos_no_3rdparty_la-pids.lo
+  CXX      slave/containerizer/mesos/isolators/docker/libmesos_no_3rdparty_la-runtime.lo
+  CXX      slave/containerizer/mesos/isolators/gpu/libmesos_no_3rdparty_la-allocator.lo
+  CXX      slave/containerizer/mesos/isolators/gpu/libmesos_no_3rdparty_la-isolator.lo
+  CXX      slave/containerizer/mesos/isolators/gpu/libmesos_no_3rdparty_la-nvml.lo
+  CXX      slave/containerizer/mesos/isolators/gpu/libmesos_no_3rdparty_la-volume.lo
+  CXX      slave/containerizer/mesos/isolators/linux/libmesos_no_3rdparty_la-capabilities.lo
+  CXX      slave/containerizer/mesos/isolators/namespaces/libmesos_no_3rdparty_la-ipc.lo
+  CXX      slave/containerizer/mesos/isolators/namespaces/libmesos_no_3rdparty_la-pid.lo
+  CXX      slave/containerizer/mesos/isolators/network/cni/plugins/port_mapper/libmesos_no_3rdparty_la-port_mapper.lo
+  CXX      resource_provider/storage/libmesos_no_3rdparty_la-disk_profile_adaptor.lo
+  CXX      resource_provider/storage/libmesos_no_3rdparty_la-disk_profile_utils.lo
+  CXX      ../include/mesos/libmesos_no_3rdparty_la-mesos.pb.lo
+  CXX      ../include/mesos/agent/libmesos_no_3rdparty_la-agent.pb.lo
+  CXX      ../include/mesos/allocator/libmesos_no_3rdparty_la-allocator.pb.lo
+  CXX      ../include/mesos/appc/libmesos_no_3rdparty_la-spec.pb.lo
+  CXX      ../include/mesos/authentication/libmesos_no_3rdparty_la-authentication.pb.lo
+  CXX      ../include/mesos/authorizer/libmesos_no_3rdparty_la-acls.pb.lo
+  CXX      ../include/mesos/authorizer/libmesos_no_3rdparty_la-authorizer.pb.lo
+  CXX      ../include/mesos/docker/libmesos_no_3rdparty_la-spec.pb.lo
+  CXX      ../include/mesos/docker/libmesos_no_3rdparty_la-v1.pb.lo
+  CXX      ../include/mesos/docker/libmesos_no_3rdparty_la-v2.pb.lo
+  CXX      ../include/mesos/executor/libmesos_no_3rdparty_la-executor.pb.lo
+  CXX      ../include/mesos/fetcher/libmesos_no_3rdparty_la-fetcher.pb.lo
+  CXX      ../include/mesos/maintenance/libmesos_no_3rdparty_la-maintenance.pb.lo
+  CXX      ../include/mesos/master/libmesos_no_3rdparty_la-master.pb.lo
+  CXX      ../include/mesos/module/libmesos_no_3rdparty_la-hook.pb.lo
+  CXX      ../include/mesos/module/libmesos_no_3rdparty_la-module.pb.lo
+  CXX      ../include/mesos/oci/libmesos_no_3rdparty_la-spec.pb.lo
+  CXX      ../include/mesos/quota/libmesos_no_3rdparty_la-quota.pb.lo
+  CXX      ../include/mesos/resource_provider/libmesos_no_3rdparty_la-resource_provider.pb.lo
+  CXX      ../include/mesos/scheduler/libmesos_no_3rdparty_la-scheduler.pb.lo
+  CXX      ../include/mesos/slave/libmesos_no_3rdparty_la-containerizer.pb.lo
+  CXX      ../include/mesos/slave/libmesos_no_3rdparty_la-oversubscription.pb.lo
+  CXX      ../include/mesos/state/libmesos_no_3rdparty_la-state.pb.lo
+  CXX      ../include/mesos/uri/libmesos_no_3rdparty_la-uri.pb.lo
+  CXX      ../include/mesos/v1/libmesos_no_3rdparty_la-mesos.pb.lo
+  CXX      ../include/mesos/v1/agent/libmesos_no_3rdparty_la-agent.pb.lo
+  CXX      ../include/mesos/v1/allocator/libmesos_no_3rdparty_la-allocator.pb.lo
+  CXX      ../include/mesos/v1/executor/libmesos_no_3rdparty_la-executor.pb.lo
+  CXX      ../include/mesos/v1/maintenance/libmesos_no_3rdparty_la-maintenance.pb.lo
+  CXX      ../include/mesos/v1/master/libmesos_no_3rdparty_la-master.pb.lo
+  CXX      ../include/mesos/v1/quota/libmesos_no_3rdparty_la-quota.pb.lo
+  CXX      ../include/mesos/v1/resource_provider/libmesos_no_3rdparty_la-resource_provider.pb.lo
+  CXX      ../include/mesos/v1/scheduler/libmesos_no_3rdparty_la-scheduler.pb.lo
+  CXXLD    libbuild.la
+  CXX      csi/libcsi_la-paths.lo
+  CXX      csi/libcsi_la-utils.lo
+  CXX      ../include/csi/libcsi_la-csi.pb.lo
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CXX      csi/libcsi_la-state.pb.lo
+  CXX      log/liblog_la-catchup.lo
+  CXX      log/liblog_la-consensus.lo
+  CXX      log/liblog_la-coordinator.lo
+  CXX      log/liblog_la-leveldb.lo
+  CXX      log/liblog_la-log.lo
+  CXX      log/liblog_la-metrics.lo
+  CXX      log/liblog_la-recover.lo
+  CXX      log/liblog_la-replica.lo
+  CXX      log/tool/liblog_la-benchmark.lo
+  CXX      log/tool/liblog_la-initialize.lo
+  CXX      log/tool/liblog_la-read.lo
+  CXX      log/tool/liblog_la-replica.lo
+  CXX      state/libstate_la-in_memory.lo
+  CXX      state/libstate_la-leveldb.lo
+  CXX      state/libstate_la-log.lo
+  CXX      state/libstate_la-zookeeper.lo
+  CXX      examples/libexamplemodule_la-example_module_impl.lo
+  CXX      examples/libtestallocator_la-test_allocator_module.lo
+  CXX      examples/libtestanonymous_la-test_anonymous_module.lo
+  CXX      examples/libtestauthentication_la-test_authentication_modules.lo
+  CXX      examples/libtestauthorizer_la-test_authorizer_module.lo
+  CXX      examples/libtestcontainer_logger_la-test_container_logger_module.lo
+  CXX      examples/libtesthook_la-test_hook_module.lo
+  CXX      examples/libtesthttpauthenticator_la-test_http_authenticator_module.lo
+  CXX      examples/libtestisolator_la-test_isolator_module.lo
+  CXX      examples/libtestmastercontender_la-test_master_contender_module.lo
+  CXX      examples/libtestmasterdetector_la-test_master_detector_module.lo
+  CXX      examples/libtestqos_controller_la-test_qos_controller_module.lo
+  CXX      examples/libtestresource_estimator_la-test_resource_estimator_module.lo
+  CXXLD    liblogrotate_container_logger.la
+  CXXLD    libfixed_resource_estimator.la
+  CXXLD    libload_qos_controller.la
+  CXXLD    liburi_disk_profile_adaptor.la
+  CXX      cli/mesos_execute-execute.o
+  CXX      cli/mesos_resolve-resolve.o
+  CXX      cli/mesos-mesos.o
+  CXX      launcher/mesos_fetcher-fetcher.o
+  CXX      launcher/mesos_executor-executor.o
+  CXX      launcher/mesos_default_executor-default_executor.o
+  CXXLD    libcsi.la
+  CXXLD    libexamplemodule.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CXXLD    libtestanonymous.la
+  CXXLD    libtestauthentication.la
+  CXXLD    libtestmasterdetector.la
+  CXXLD    libtestmastercontender.la
+  CXXLD    libtestqos_controller.la
+  CXXLD    libtestauthorizer.la
+  CXXLD    libtestcontainer_logger.la
+  CXXLD    libtestresource_estimator.la
+  CXXLD    libtesthttpauthenticator.la
+  CXXLD    libtesthook.la
+  CXXLD    libtestisolator.la
+  CXXLD    libtestallocator.la
+  CXXLD    libstate.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CXXLD    liblog.la
+copying selected object files to avoid basename conflicts...
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CXXLD    libmesos_no_3rdparty.la
+copying selected object files to avoid basename conflicts...
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CCLD     libmesos.la
+running bdist_egg
+running egg_info
+creating src/mesos.executor.egg-info
+writing requirements to src/mesos.executor.egg-info/requires.txt
+writing src/mesos.executor.egg-info/PKG-INFO
+writing namespace_packages to src/mesos.executor.egg-info/namespace_packages.txt
+writing top-level names to src/mesos.executor.egg-info/top_level.txt
+writing dependency_links to src/mesos.executor.egg-info/dependency_links.txt
+writing manifest file 'src/mesos.executor.egg-info/SOURCES.txt'
+running bdist_egg
+running bdist_egg
+running egg_info
+creating src/mesos.scheduler.egg-info
+writing requirements to src/mesos.scheduler.egg-info/requires.txt
+writing src/mesos.scheduler.egg-info/PKG-INFO
+reading manifest file 'src/mesos.executor.egg-info/SOURCES.txt'
+writing namespace_packages to src/mesos.scheduler.egg-info/namespace_packages.txt
+writing top-level names to src/mesos.scheduler.egg-info/top_level.txt
+writing dependency_links to src/mesos.scheduler.egg-info/dependency_links.txt
+writing manifest file 'src/mesos.scheduler.egg-info/SOURCES.txt'
+writing manifest file 'src/mesos.executor.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running egg_info
+creating src/mesos.cli.egg-info
+writing src/mesos.cli.egg-info/PKG-INFO
+writing namespace_packages to src/mesos.cli.egg-info/namespace_packages.txt
+writing top-level names to src/mesos.cli.egg-info/top_level.txt
+writing dependency_links to src/mesos.cli.egg-info/dependency_links.txt
+writing manifest file 'src/mesos.cli.egg-info/SOURCES.txt'
+running bdist_egg
+reading manifest file 'src/mesos.cli.egg-info/SOURCES.txt'
+reading manifest file 'src/mesos.scheduler.egg-info/SOURCES.txt'
+writing manifest file 'src/mesos.cli.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+writing manifest file 'src/mesos.scheduler.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running egg_info
+creating src/mesos.native.egg-info
+writing requirements to src/mesos.native.egg-info/requires.txt
+writing src/mesos.native.egg-info/PKG-INFO
+writing namespace_packages to src/mesos.native.egg-info/namespace_packages.txt
+writing top-level names to src/mesos.native.egg-info/top_level.txt
+writing dependency_links to src/mesos.native.egg-info/dependency_links.txt
+writing manifest file 'src/mesos.native.egg-info/SOURCES.txt'
+reading manifest file 'src/mesos.native.egg-info/SOURCES.txt'
+writing manifest file 'src/mesos.native.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/mesos
+copying src/mesos/__init__.py -> build/lib.linux-x86_64-2.7/mesos
+creating build/lib.linux-x86_64-2.7/mesos/executor
+copying src/mesos/executor/__init__.py -> build/lib.linux-x86_64-2.7/mesos/executor
+running build_ext
+building 'mesos.executor._executor' extension
+creating build/temp.linux-x86_64-2.7
+creating build/temp.linux-x86_64-2.7/src
+creating build/temp.linux-x86_64-2.7/src/mesos
+creating build/temp.linux-x86_64-2.7/src/mesos/executor
+gcc -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -g1 -O0 -Wno-unused-local-typedefs -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -I/usr/include/subversion-1 -I/usr/local/include/libnl3 -I/usr/include/apr-1 -I/usr/include/apr-1.0 -fPIC -I/root/mesos-1.6.1/build/../include -I/root/mesos-1.6.1/build/include -I/root/mesos-1.6.1/build/include/mesos -I/root/mesos-1.6.1/build/src -I/root/mesos-1.6.1/build/src/python/executor/src/mesos/executor -I/root/mesos-1.6.1/build/src/python/native_common -I/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src -I/usr/include/python2.7 -c src/mesos/executor/mesos_executor_driver_impl.cpp -o build/temp.linux-x86_64-2.7/src/mesos/executor/mesos_executor_driver_impl.o
+running install_lib
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/mesos
+copying src/mesos/http.py -> build/lib.linux-x86_64-2.7/mesos
+copying src/mesos/cli.py -> build/lib.linux-x86_64-2.7/mesos
+copying src/mesos/__init__.py -> build/lib.linux-x86_64-2.7/mesos
+copying src/mesos/futures.py -> build/lib.linux-x86_64-2.7/mesos
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/mesos
+copying build/lib.linux-x86_64-2.7/mesos/http.py -> build/bdist.linux-x86_64/egg/mesos
+running install_lib
+running build_py
+copying build/lib.linux-x86_64-2.7/mesos/cli.py -> build/bdist.linux-x86_64/egg/mesos
+copying build/lib.linux-x86_64-2.7/mesos/__init__.py -> build/bdist.linux-x86_64/egg/mesos
+creating build
+copying build/lib.linux-x86_64-2.7/mesos/futures.py -> build/bdist.linux-x86_64/egg/mesos
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/mesos
+copying src/mesos/__init__.py -> build/lib.linux-x86_64-2.7/mesos
+byte-compiling build/bdist.linux-x86_64/egg/mesos/http.py to http.pyc
+creating build/lib.linux-x86_64-2.7/mesos/scheduler
+copying src/mesos/scheduler/__init__.py -> build/lib.linux-x86_64-2.7/mesos/scheduler
+running build_ext
+byte-compiling build/bdist.linux-x86_64/egg/mesos/cli.py to cli.pyc
+building 'mesos.scheduler._scheduler' extension
+creating build/temp.linux-x86_64-2.7
+creating build/temp.linux-x86_64-2.7/src
+creating build/temp.linux-x86_64-2.7/src/mesos
+creating build/temp.linux-x86_64-2.7/src/mesos/scheduler
+byte-compiling build/bdist.linux-x86_64/egg/mesos/__init__.py to __init__.pyc
+gcc -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -g1 -O0 -Wno-unused-local-typedefs -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -I/usr/include/subversion-1 -I/usr/local/include/libnl3 -I/usr/include/apr-1 -I/usr/include/apr-1.0 -fPIC -I/root/mesos-1.6.1/build/../include -I/root/mesos-1.6.1/build/include -I/root/mesos-1.6.1/build/include/mesos -I/root/mesos-1.6.1/build/src -I/root/mesos-1.6.1/build/src/python/scheduler/src/mesos/scheduler -I/root/mesos-1.6.1/build/src/python/native_common -I/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src -I/usr/include/python2.7 -c src/mesos/scheduler/mesos_scheduler_driver_impl.cpp -o build/temp.linux-x86_64-2.7/src/mesos/scheduler/mesos_scheduler_driver_impl.o
+byte-compiling build/bdist.linux-x86_64/egg/mesos/futures.py to futures.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.cli.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+copying src/mesos.cli.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.cli.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.cli.egg-info/namespace_packages.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.cli.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+running install_lib
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/mesos
+copying src/mesos/__init__.py -> build/lib.linux-x86_64-2.7/mesos
+mesos.__init__: module references __path__
+creating /root/mesos-1.6.1/build/src/python/dist
+creating build/lib.linux-x86_64-2.7/mesos/native
+creating '/root/mesos-1.6.1/build/src/python/dist/mesos.cli-1.6.1-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+copying src/mesos/native/__init__.py -> build/lib.linux-x86_64-2.7/mesos/native
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/mesos
+creating build/bdist.linux-x86_64/egg/mesos/native
+copying build/lib.linux-x86_64-2.7/mesos/native/__init__.py -> build/bdist.linux-x86_64/egg/mesos/native
+copying build/lib.linux-x86_64-2.7/mesos/__init__.py -> build/bdist.linux-x86_64/egg/mesos
+byte-compiling build/bdist.linux-x86_64/egg/mesos/native/__init__.py to __init__.pyc
+running bdist_egg
+byte-compiling build/bdist.linux-x86_64/egg/mesos/__init__.py to __init__.pyc
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.native.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.native.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.native.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+running bdist_wheel
+copying src/mesos.native.egg-info/namespace_packages.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.native.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.native.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+mesos.__init__: module references __path__
+creating '/root/mesos-1.6.1/build/src/python/dist/mesos.native-1.6.1-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+running build
+running egg_info
+creating src/mesos.egg-info
+writing requirements to src/mesos.egg-info/requires.txt
+writing src/mesos.egg-info/PKG-INFO
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+writing top-level names to src/mesos.egg-info/top_level.txt
+writing dependency_links to src/mesos.egg-info/dependency_links.txt
+writing manifest file 'src/mesos.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+copying mesos/http.py -> build/bdist.linux-x86_64/wheel/mesos
+copying mesos/cli.py -> build/bdist.linux-x86_64/wheel/mesos
+installing to build/bdist.linux-x86_64/wheel
+running install
+Skipping installation of build/bdist.linux-x86_64/wheel/mesos/__init__.py (namespace package)
+copying mesos/futures.py -> build/bdist.linux-x86_64/wheel/mesos
+running install_lib
+running install_egg_info
+
+Skipping installation of build/bdist.linux-x86_64/wheel/mesos/__init__.py (namespace package)
+*** Warning: Linking the shared library libmesos.la against the
+Copying src/mesos.cli.egg-info to build/bdist.linux-x86_64/wheel/mesos.cli-1.6.1-py2.7.egg-info
+*** static library ../3rdparty/leveldb-1.19/out-static/libleveldb.a is not portable!
+copying mesos/native/__init__.py -> build/bdist.linux-x86_64/wheel/mesos/native
+running install_egg_info
+Copying src/mesos.native.egg-info to build/bdist.linux-x86_64/wheel/mesos.native-1.6.1-py2.7.egg-info
+Installing build/bdist.linux-x86_64/wheel/mesos.cli-1.6.1-py2.7-nspkg.pth
+running install_scripts
+Installing build/bdist.linux-x86_64/wheel/mesos.native-1.6.1-py2.7-nspkg.pth
+running install_scripts
+reading manifest file 'src/mesos.egg-info/SOURCES.txt'
+writing manifest file 'src/mesos.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/mesos
+copying src/mesos/__init__.py -> build/lib.linux-x86_64-2.7/mesos
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/mesos
+copying build/lib.linux-x86_64-2.7/mesos/__init__.py -> build/bdist.linux-x86_64/egg/mesos
+byte-compiling build/bdist.linux-x86_64/egg/mesos/__init__.py to __init__.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+running bdist_egg
+copying src/mesos.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+mesos.__init__: module references __path__
+creating '/root/mesos-1.6.1/build/src/python/dist/mesos-1.6.1-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+running bdist_wheel
+running build
+running egg_info
+creating src/mesos.interface.egg-info
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+writing requirements to src/mesos.interface.egg-info/requires.txt
+writing src/mesos.interface.egg-info/PKG-INFO
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/mesos
+copying build/lib.linux-x86_64-2.7/mesos/__init__.py -> build/bdist.linux-x86_64/wheel/mesos
+writing namespace_packages to src/mesos.interface.egg-info/namespace_packages.txt
+running install_egg_info
+writing top-level names to src/mesos.interface.egg-info/top_level.txt
+Copying src/mesos.egg-info to build/bdist.linux-x86_64/wheel/mesos-1.6.1-py2.7.egg-info
+writing dependency_links to src/mesos.interface.egg-info/dependency_links.txt
+writing manifest file 'src/mesos.interface.egg-info/SOURCES.txt'
+running install_scripts
+reading manifest file 'src/mesos.interface.egg-info/SOURCES.txt'
+writing manifest file 'src/mesos.interface.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/wheel/mesos.cli-1.6.1.dist-info/WHEEL
+creating build/bdist.linux-x86_64/wheel/mesos.native-1.6.1.dist-info/WHEEL
+running install_lib
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/mesos
+copying src/mesos/__init__.py -> build/lib.linux-x86_64-2.7/mesos
+creating build/lib.linux-x86_64-2.7/mesos/interface
+copying src/mesos/interface/mesos_pb2.py -> build/lib.linux-x86_64-2.7/mesos/interface
+creating build/bdist.linux-x86_64/wheel/mesos-1.6.1.dist-info/WHEEL
+copying src/mesos/interface/__init__.py -> build/lib.linux-x86_64-2.7/mesos/interface
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/mesos
+creating build/bdist.linux-x86_64/egg/mesos/interface
+copying build/lib.linux-x86_64-2.7/mesos/interface/mesos_pb2.py -> build/bdist.linux-x86_64/egg/mesos/interface
+copying build/lib.linux-x86_64-2.7/mesos/interface/__init__.py -> build/bdist.linux-x86_64/egg/mesos/interface
+copying build/lib.linux-x86_64-2.7/mesos/__init__.py -> build/bdist.linux-x86_64/egg/mesos
+byte-compiling build/bdist.linux-x86_64/egg/mesos/interface/mesos_pb2.py to mesos_pb2.pyc
+byte-compiling build/bdist.linux-x86_64/egg/mesos/interface/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/mesos/__init__.py to __init__.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.interface.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.interface.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.interface.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.interface.egg-info/namespace_packages.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.interface.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.interface.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+mesos.__init__: module references __path__
+creating '/root/mesos-1.6.1/build/src/python/dist/mesos.interface-1.6.1-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+running bdist_wheel
+running build
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+Skipping installation of build/bdist.linux-x86_64/wheel/mesos/__init__.py (namespace package)
+copying mesos/interface/mesos_pb2.py -> build/bdist.linux-x86_64/wheel/mesos/interface
+copying mesos/interface/__init__.py -> build/bdist.linux-x86_64/wheel/mesos/interface
+running install_egg_info
+Copying src/mesos.interface.egg-info to build/bdist.linux-x86_64/wheel/mesos.interface-1.6.1-py2.7.egg-info
+Installing build/bdist.linux-x86_64/wheel/mesos.interface-1.6.1-py2.7-nspkg.pth
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/mesos.interface-1.6.1.dist-info/WHEEL
+gcc -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -g1 -O0 -Wno-unused-local-typedefs -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -I/usr/include/subversion-1 -I/usr/local/include/libnl3 -I/usr/include/apr-1 -I/usr/include/apr-1.0 -fPIC -I/root/mesos-1.6.1/build/../include -I/root/mesos-1.6.1/build/include -I/root/mesos-1.6.1/build/include/mesos -I/root/mesos-1.6.1/build/src -I/root/mesos-1.6.1/build/src/python/executor/src/mesos/executor -I/root/mesos-1.6.1/build/src/python/native_common -I/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src -I/usr/include/python2.7 -c src/mesos/executor/proxy_executor.cpp -o build/temp.linux-x86_64-2.7/src/mesos/executor/proxy_executor.o
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+gcc -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -g1 -O0 -Wno-unused-local-typedefs -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -I/usr/include/subversion-1 -I/usr/local/include/libnl3 -I/usr/include/apr-1 -I/usr/include/apr-1.0 -fPIC -I/root/mesos-1.6.1/build/../include -I/root/mesos-1.6.1/build/include -I/root/mesos-1.6.1/build/include/mesos -I/root/mesos-1.6.1/build/src -I/root/mesos-1.6.1/build/src/python/scheduler/src/mesos/scheduler -I/root/mesos-1.6.1/build/src/python/native_common -I/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src -I/usr/include/python2.7 -c src/mesos/scheduler/proxy_scheduler.cpp -o build/temp.linux-x86_64-2.7/src/mesos/scheduler/proxy_scheduler.o
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+gcc -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -g1 -O0 -Wno-unused-local-typedefs -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -I/usr/include/subversion-1 -I/usr/local/include/libnl3 -I/usr/include/apr-1 -I/usr/include/apr-1.0 -fPIC -I/root/mesos-1.6.1/build/../include -I/root/mesos-1.6.1/build/include -I/root/mesos-1.6.1/build/include/mesos -I/root/mesos-1.6.1/build/src -I/root/mesos-1.6.1/build/src/python/executor/src/mesos/executor -I/root/mesos-1.6.1/build/src/python/native_common -I/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src -I/usr/include/python2.7 -c src/mesos/executor/module.cpp -o build/temp.linux-x86_64-2.7/src/mesos/executor/module.o
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+gcc -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -g1 -O0 -Wno-unused-local-typedefs -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -I/usr/include/subversion-1 -I/usr/local/include/libnl3 -I/usr/include/apr-1 -I/usr/include/apr-1.0 -fPIC -I/root/mesos-1.6.1/build/../include -I/root/mesos-1.6.1/build/include -I/root/mesos-1.6.1/build/include/mesos -I/root/mesos-1.6.1/build/src -I/root/mesos-1.6.1/build/src/python/scheduler/src/mesos/scheduler -I/root/mesos-1.6.1/build/src/python/native_common -I/root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src -I/usr/include/python2.7 -c src/mesos/scheduler/module.cpp -o build/temp.linux-x86_64-2.7/src/mesos/scheduler/module.o
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+g++ -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fstack-protector-strong -Wformat -Werror=format-security -L/usr/local/lib -g1 -O0 -Wno-unused-local-typedefs -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -I/usr/include/subversion-1 -I/usr/local/include/libnl3 -I/usr/include/apr-1 -I/usr/include/apr-1.0 build/temp.linux-x86_64-2.7/src/mesos/executor/mesos_executor_driver_impl.o build/temp.linux-x86_64-2.7/src/mesos/executor/proxy_executor.o build/temp.linux-x86_64-2.7/src/mesos/executor/module.o /root/mesos-1.6.1/build/src/.libs/libmesos_no_3rdparty.a /root/mesos-1.6.1/build/3rdparty/libprocess/.libs/libprocess.a /root/mesos-1.6.1/build/3rdparty/leveldb-1.19/out-static/libleveldb.a /root/mesos-1.6.1/build/3rdparty/zookeeper-3.4.8/src/c/.libs/libzookeeper_mt.a /root/mesos-1.6.1/build/3rdparty/glog-0.3.3/.libs/libglog.a /root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src/.libs/libprotobuf.a /root/mesos-1.6.1/build/3rdparty/libev-4.22/.libs/libev.a -o build/lib.linux-x86_64-2.7/mesos/executor/_executor.so -Wl,--as-needed -L/usr/local/lib -lz -lsvn_delta-1 -lsvn_subr-1 -lsasl2 -lnl-idiag-3 -lnl-route-3 -lnl-3 -lcurl -lapr-1 -lrt
+g++ -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fstack-protector-strong -Wformat -Werror=format-security -L/usr/local/lib -g1 -O0 -Wno-unused-local-typedefs -g1 -O0 -Wno-unused-local-typedefs -std=c++11 -I/usr/include/subversion-1 -I/usr/local/include/libnl3 -I/usr/include/apr-1 -I/usr/include/apr-1.0 build/temp.linux-x86_64-2.7/src/mesos/scheduler/mesos_scheduler_driver_impl.o build/temp.linux-x86_64-2.7/src/mesos/scheduler/proxy_scheduler.o build/temp.linux-x86_64-2.7/src/mesos/scheduler/module.o /root/mesos-1.6.1/build/src/.libs/libmesos_no_3rdparty.a /root/mesos-1.6.1/build/3rdparty/libprocess/.libs/libprocess.a /root/mesos-1.6.1/build/3rdparty/leveldb-1.19/out-static/libleveldb.a /root/mesos-1.6.1/build/3rdparty/zookeeper-3.4.8/src/c/.libs/libzookeeper_mt.a /root/mesos-1.6.1/build/3rdparty/glog-0.3.3/.libs/libglog.a /root/mesos-1.6.1/build/3rdparty/protobuf-3.5.0/src/.libs/libprotobuf.a /root/mesos-1.6.1/build/3rdparty/libev-4.22/.libs/libev.a -o build/lib.linux-x86_64-2.7/mesos/scheduler/_scheduler.so -Wl,--as-needed -L/usr/local/lib -lz -lsvn_delta-1 -lsvn_subr-1 -lsasl2 -lnl-idiag-3 -lnl-route-3 -lnl-3 -lcurl -lapr-1 -lrt
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/mesos
+creating build/bdist.linux-x86_64/egg/mesos/executor
+copying build/lib.linux-x86_64-2.7/mesos/executor/_executor.so -> build/bdist.linux-x86_64/egg/mesos/executor
+copying build/lib.linux-x86_64-2.7/mesos/executor/__init__.py -> build/bdist.linux-x86_64/egg/mesos/executor
+copying build/lib.linux-x86_64-2.7/mesos/__init__.py -> build/bdist.linux-x86_64/egg/mesos
+byte-compiling build/bdist.linux-x86_64/egg/mesos/executor/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/mesos/__init__.py to __init__.pyc
+creating stub loader for mesos/executor/_executor.so
+byte-compiling build/bdist.linux-x86_64/egg/mesos/executor/_executor.py to _executor.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.executor.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.executor.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.executor.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.executor.egg-info/namespace_packages.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.executor.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.executor.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+writing build/bdist.linux-x86_64/egg/EGG-INFO/native_libs.txt
+zip_safe flag not set; analyzing archive contents...
+mesos.__init__: module references __path__
+creating '/root/mesos-1.6.1/build/src/python/dist/mesos.executor-1.6.1-py2.7-linux-x86_64.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+running bdist_wheel
+running build
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+Skipping installation of build/bdist.linux-x86_64/wheel/mesos/__init__.py (namespace package)
+copying mesos/executor/_executor.so -> build/bdist.linux-x86_64/wheel/mesos/executor
+copying mesos/executor/__init__.py -> build/bdist.linux-x86_64/wheel/mesos/executor
+running install_egg_info
+Copying src/mesos.executor.egg-info to build/bdist.linux-x86_64/wheel/mesos.executor-1.6.1-py2.7.egg-info
+Installing build/bdist.linux-x86_64/wheel/mesos.executor-1.6.1-py2.7-nspkg.pth
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/mesos.executor-1.6.1.dist-info/WHEEL
+  CXXLD    mesos-local
+  CXXLD    mesos-log
+  CXXLD    mesos-execute
+  CXXLD    mesos-resolve
+  CXXLD    mesos
+  CXXLD    mesos-executor
+  CXXLD    mesos-fetcher
+  CXXLD    mesos-default-executor
+  CXXLD    mesos-containerizer
+  CXXLD    mesos-logrotate-logger
+  CXXLD    mesos-cni-port-mapper
+  CXXLD    mesos-io-switchboard
+  CXXLD    mesos-usage
+  CXXLD    mesos-tcp-connect
+  CXXLD    mesos-agent
+  CXXLD    mesos-docker-executor
+  CXXLD    mesos-network-helper
+  CXXLD    mesos-master
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/mesos
+copying build/lib.linux-x86_64-2.7/mesos/__init__.py -> build/bdist.linux-x86_64/egg/mesos
+creating build/bdist.linux-x86_64/egg/mesos/scheduler
+copying build/lib.linux-x86_64-2.7/mesos/scheduler/_scheduler.so -> build/bdist.linux-x86_64/egg/mesos/scheduler
+copying build/lib.linux-x86_64-2.7/mesos/scheduler/__init__.py -> build/bdist.linux-x86_64/egg/mesos/scheduler
+byte-compiling build/bdist.linux-x86_64/egg/mesos/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-x86_64/egg/mesos/scheduler/__init__.py to __init__.pyc
+creating stub loader for mesos/scheduler/_scheduler.so
+byte-compiling build/bdist.linux-x86_64/egg/mesos/scheduler/_scheduler.py to _scheduler.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.scheduler.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.scheduler.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.scheduler.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.scheduler.egg-info/namespace_packages.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.scheduler.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/mesos.scheduler.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+writing build/bdist.linux-x86_64/egg/EGG-INFO/native_libs.txt
+zip_safe flag not set; analyzing archive contents...
+mesos.__init__: module references __path__
+creating '/root/mesos-1.6.1/build/src/python/dist/mesos.scheduler-1.6.1-py2.7-linux-x86_64.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+running bdist_wheel
+running build
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+Skipping installation of build/bdist.linux-x86_64/wheel/mesos/__init__.py (namespace package)
+copying mesos/scheduler/_scheduler.so -> build/bdist.linux-x86_64/wheel/mesos/scheduler
+copying mesos/scheduler/__init__.py -> build/bdist.linux-x86_64/wheel/mesos/scheduler
+running install_egg_info
+Copying src/mesos.scheduler.egg-info to build/bdist.linux-x86_64/wheel/mesos.scheduler-1.6.1-py2.7.egg-info
+Installing build/bdist.linux-x86_64/wheel/mesos.scheduler-1.6.1-py2.7-nspkg.pth
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/mesos.scheduler-1.6.1.dist-info/WHEEL
+make[2]: Leaving directory '/root/mesos-1.6.1/build/src'
+make[1]: Leaving directory '/root/mesos-1.6.1/build/src'
